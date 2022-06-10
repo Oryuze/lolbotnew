@@ -24,15 +24,15 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['62895369318181','62895369318181','62895369318181']
-global.premium = ['62895369318181']
-global.phone = '62895369318181'
-global.owners  = '62895369318181'
-global.acara = 'Koleksibot Team'
+global.owner = ['6282296959969','6282296959969','6282296959969']
+global.premium = ['6282296959969']
+global.phone = '6282296959969'
+global.owners  = '6282296959969'
+global.acara = 'Turu'
 global.tanggal = '31,5,2023'
-global.botname = 'Bluehat By Koleksibot'
-global.packname = 'Koleksibot'
-global.author = 'Bluehat Bot MD'
+global.botname = 'Ayaka BoT'
+global.packname = 'AyakaBoT'
+global.author = 'By:Ahmad'
 global.sessionName = 'octave'
 global.tresshold = '0.65'
 global.sourceurl = 'https://github.com/koleksibot'
