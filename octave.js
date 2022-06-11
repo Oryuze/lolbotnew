@@ -411,28 +411,6 @@ type: 'append'
 client.ev.emit('messages.upsert', msg)
 }
 
-if (('family100'+m.chat in _family100) && isCmd) {
-kuis = true
-let room = _family100['family100'+m.chat]
-let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
-let isSurender = /^((me)?nyerah|surr?ender)$/i.test(m.text)
-if (!isSurender) {
-let index = room.jawaban.findIndex(v => v.toLowerCase().replace(/[^\w\s\-]+/, '') === teks)
-if (room.terjawab[index]) return !0
-room.terjawab[index] = m.sender
-}
-let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
-let caption = `
-Jawablah Pertanyaan Berikut :\n${room.soal}\n\n\nTerdapat ${room.jawaban.length} Jawaban ${room.jawaban.find(v => v.includes(' ')) ? `(beberapa Jawaban Terdapat Spasi)` : ''}
-${isWin ? `Semua Jawaban Terjawab` : isSurender ? 'Menyerah!' : ''}
-${Array.from(room.jawaban, (jawaban, index) => {
-return isSurender || room.terjawab[index] ? `(${index + 1}) ${jawaban} ${room.terjawab[index] ? '@' + room.terjawab[index].split('@')[0] : ''}`.trim() : false
-}).filter(v => v).join('\n')}
-${isSurender ? '' : `Perfect Player`}`.trim()
-client.sendText(m.chat, caption, m, { contextInfo: { mentionedJid: parseMention(caption) }}).then(mes => { return _family100['family100'+m.chat].pesan = mesg }).catch(_ => _)
-if (isWin || isSurender) delete _family100['family100'+m.chat]
-}
-
 if (tebaklagu.hasOwnProperty(m.chat.split('@')[0]) && isCmd) {
 kuis = true
 let jawaban = tebaklagu[m.chat.split('@')[0]]
