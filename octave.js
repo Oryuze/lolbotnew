@@ -2419,7 +2419,7 @@ break
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/bts?apikey=ThadzBotZ' },
-                    caption: `Yahahaha Plastik Kok Jadi Fans 🌚`,
+                    caption: `Nih gan!!`,
                     footer: client.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -3935,22 +3935,22 @@ break
                                                                             "title": "Harga Sewabot 🔥",
                                                                             "rows": [
                                                                                 {
-                                                                                    "title": "Trial 2 Hari 🚀",
-                                                                                    "description": "Trial Gunakan Bot Selama 2Hari🗿",
+                                                                                    "title": "Free",
+                                                                                    "description": "Add bot gratis (Syarat & ketentuan berlaku)",
                                                                                     "rowId": `${prefix}chatowner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "😻 5RIBU 😻",
-                                                                                    "description": "Sewabot Dengan Harga 5K Selama 7Hari/1Minggu 🗿",
+                                                                                    "description": "Sewabot Dengan Harga 5K Selama 7Hari/1Minggu ",
                                                                                     "rowId": `${prefix}chatowner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
-                                                                                    "title": "😻 20RIBU 😻",
-                                                                                    "description": "Sewabot Dengan Harga 20K Selama 30Hari/1Bulan 🗿",
+                                                                                    "title": "😻 15RIBU 😻",
+                                                                                    "description": "Sewabot Dengan Harga 15K Selama 30Hari/1Bulan ",
                                                                                     "rowId": `${prefix}chatowner`
                                                                                 }
                                                                             ]
@@ -3968,7 +3968,7 @@ case 'owner': case 'creator': {
 client.sendContact(m.chat, global.owner, m)
 }
 break
-                                          case 'nextmenu' : case 'daftardulu': case 'pilihmana': case 'manapilih':{
+                                          case 'nextmenu' :{
                                             let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                             listMessage :{
                                                                 title: `Hi\n\n ${pushname}`,
@@ -4738,76 +4738,7 @@ break
                 client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5fac1f5de75c44f7cb35a.jpg' }, caption: `*Hi, ${m.pushName}*\n Untuk checkout di Shopee, kamu bisa cari produk di kolom pencarian > masukan dulu produknya ke keranjang, nanti dikeranjang silakan pilih produk yang ingin dicheckout ya, voucher yang ingin digunakan (jika ada), kemudian klik checkout.Di halaman checkout kamu bisa lengkapi pilihan jasa kirim dan metode bayar.Lengkapnya ada di link ini ya 👉 https://shopee.co.id/article-1c\n` }, { quoted: m })
             }
             break
-                                          case 'formedit':{
-                                            let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                                                            listMessage :{
-                                                                title: `${pushname}`,
-                                                                description: `
- 
-｡❁۪°ʝαʂԃiƚ ᥲхᥣᥣуᥒ👩‍🎨🛍️ₒ𓂂˚
-        /)＿/)
-  ／(๑^᎑^๑)っ formatt♡
-／|￣∪￣ ￣ |＼／
- |＿＿_＿＿|／
- ᝰ𖣁୧💭Nᥲ꧑ᥲ :
-ᝰ𖣁୧🩰Mᥲᥙ ⍴ᥱsan ᥲ⍴ᥲ :
-ᝰ𖣁୧💭Nᥲ꧑ᥲ gc :
-ᝰ𖣁୧🩰Bᥱrᥲ⍴ᥲ :
-ᝰ𖣁୧💭Pᥲу꧑ᥱᥒ𝗍 :
-ᝰ𖣁୧🩰Chr :
-ᝰ𖣁୧💭Bᥙk𝗍і ⍴ᥲу꧑ᥱᥒ𝗍 :
- ᝰ𖣁୧🩰Tһᥱ꧑ᥱ :
-ᝰ𖣁୧💭Wᥲrnᥲ bᥲground :
-ᝰ𖣁୧🩰Tᥲg 1 ᥲძ꧑іᥒ :
- ᝰ𖣁୧💭 Jᥲᥒjι gᥲ ᥣᥱft ᥉ᥱtᥱᥣᥲh dιᥣᥲyᥲᥒι :
-
-*𝓟ᥲу꧑ᥱᥒ𝗍::*
-*🛒⍴ᥲуmᥱᥒ𝗍 ᥴᥒі𝗍* 
-ʚ1 𝖿᥆𝗍᥆ : 50ᥴ-100ᥴ
-ʚ2 𝖿᥆𝗍᥆ : 100ᥴ-200ᥴ
-ʚ3 𝖿᥆𝗍᥆ : 200ᥴ-300ᥴ
-
- *🛒⍴ᥲуmᥱᥒ𝗍 ᥣ⍴m* 
-ʚ1 𝖿᥆𝗍᥆ : 5 ᥣ⍴m
-ʚ2 𝖿᥆𝗍᥆ : 10 ᥣ⍴m
-ʚ3 𝖿᥆𝗍᥆ : 15 ᥣ⍴m
-
- *🛒⍴ᥲуmᥱᥒ𝗍 nokos* 
-ʚ1 𝖿᥆𝗍᥆ : 3 nokos
-ʚ2 𝖿᥆𝗍᥆ : 5 nokos
-ʚ3 𝖿᥆𝗍᥆ : 8/10 nokos
-
-ᥒotᥱ📝 : mohon bersabar dalam memesan krna admin punya kesibukan masing"
- 
- Group Whatsapp Order : https://chat.whatsapp.com/H1ItCCX01pCE3krZuek9ZC`,
-                                                                buttonText: "CLICK HERE",
-                                                                footerText: `Chat Admin Kalau Minat`,
-                                                                listType: "SINGLE_SELECT",
-                                                                sections: [{
-                                                                            "title": "Other Menu Bot",
-                                                                            "rows": [
-                                                                                {
-                                                                                    "title": "⚡PING⚡",
-                                                                                    "description": "Speed Bot",
-                                                                                    "rowId": `${prefix}ping`
-                                                                                },
-                                                                                
-                                                                                {
-                                                                                    
-                                                                                    "title": "BACK TO MENU ▶️",
-                                                                                    "description": "Kembali Ke Halaman Menu Bot",
-                                                                                    "rowId": `${prefix}menu`
-                                                                                }
-                                                                            ]
-                                                                       
-                                                                        }
-                                                                    ],
-                                                      listType: 1
-                                                            }
-                                                        }), {})
-                                                        client.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                                                        }
-break
+                                          
                                           case 'anonymousmenu':{
                                             let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                             listMessage :{
@@ -5493,8 +5424,8 @@ phoneNumber: global.phone
 }
 }, {
 quickReplyButton: {
-displayText: '⚡T O P U P G A M E M L⚡',
-id: `${prefix}mltopup`
+displayText: '🎈MENU AWAL🎈',
+id: `${prefix}nextmenu`
 }
 }, {
 quickReplyButton: {
@@ -5503,8 +5434,8 @@ id: `${prefix}rulesbot`
 }  
 }, {
 quickReplyButton: {
-displayText: '⚡T O P U P G A M E P U B G ⚡',
-id: 'pubgtopup'
+displayText: '⚡CONTACT OWNER⚡',
+id: 'owner'
 }
 }]
 client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
