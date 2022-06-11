@@ -144,8 +144,8 @@ async function start() {
                 } catch {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
-                       let Ttes = `${num.split("@")[0]} Leaving To ${metadata.subject}`
-let Tod = `Welcome To ${metadata.subject} ${num.split("@")[0]}`
+                       let Ttes = `${num.split("@")[0]} Telah Meninggalkan Grup ${metadata.subject}`
+let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("@")[0]}`
                 if (anu.action == 'add') {
                     let message = await prepareWAMessageMedia({ image: {url: ppuser }}, { upload: client.waUploadToServer })
                 const template = generateWAMessageFromContent(anu.id, proto.Message.fromObject({
@@ -153,11 +153,11 @@ let Tod = `Welcome To ${metadata.subject} ${num.split("@")[0]}`
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: Tod,
-                            hydratedFooterText: 'Selamat Datang Di Group Semoga Betah Kak',
+                            hydratedFooterText: 'Selamat Datang Di Group Semoga Betah',
                             hydratedButtons: [{
                             	urlButton: {
-                                displayText: 'B L O G G E R ',
-                                    url: 'https://rootsec.xyz'
+                                displayText: 'O W N E R ',
+                                    url: 'https://wa.me/6282296959969'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -181,11 +181,11 @@ let Tod = `Welcome To ${metadata.subject} ${num.split("@")[0]}`
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: Ttes,
-                            hydratedFooterText: 'Selamat Tinggal Semoga Tenang Di Alam Sana 🗿',
+                            hydratedFooterText: 'Selamat Tinggal Semoga Tenang Di Alam Sana :D',
                             hydratedButtons: [{
                             	urlButton: {
-                                displayText: 'B L O G G E R',
-                                    url: 'https://rootsec.xyz'
+                                displayText: 'O W N E R',
+                                    url: 'https://wa.me/6282296959969'
                                 }
                             }, {
                                 quickReplyButton: {
