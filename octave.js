@@ -100,7 +100,7 @@ const rurl = relink[Math.floor(Math.random() * relink.length)];
 maclient = teks
 client.sendMessage(m.chat, {text:maclient, mentions: await client.parseMention(maclient), contextInfo:{externalAdReply:{
 title: `${ucapanWaktu} ${pushname}`,
-body: "©Koleksibot",
+body: "©AyakaBoT",
 thumbnail: thum,
 mediaType:1,
 mediaUrl: rurl,
@@ -117,10 +117,10 @@ const fvid = {
                 },
 	 message: { 
                  "videoMessage": { 
-                 "title": `Koleksibot`,
-                 "h": `Koleksibot`,
+                 "title": `AyakaBoT`,
+                 "h": `AyakaBoT`,
                  'duration': '99999', 
-                 'caption': `test anjg`,
+                 'caption': `test`,
                  'jpegThumbnail': global.thumb
                         }
                        }
@@ -138,7 +138,7 @@ const dev = {
                             itemCount : 123,
                             itemCoun : 404,
                             surface : 404,
-                            message: `©Koleksibot`,
+                            message: `©Ayaka-BoT`,
                             orderTitle: 'B',
                             thumbnail: global.thumb, 
                             sellerJid: '0@s.whatsapp.net'
@@ -245,12 +245,12 @@ const isMedia = /image|video|sticker|audio/.test(mime)
 banUser = await client.fetchBlocklist()
 const isBan = banUser ? banUser.includes(m.sender) : false
 const jam = moment.tz('Asia/Jakarta').format('HH');
-const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "62895369318181-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: global.thumb, surface: 200, message: `©Koleksibot`, orderTitle: 'KOLEKSIBOT', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-		const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `©Koleksibot`,jpegThumbnail: global.thumb}}}
-		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "62895369318181-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
-		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":`© ${global.owner}`, "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': `©Koleksibot`, 'jpegThumbnail': global.thumb}}}
-		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "62895369318181-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `©Koleksibot`, 'jpegThumbnail': global.thumb}}}
-		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "62895369318181-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`P`, "h": `Hmm`,'seconds': '359996400', 'caption': `Koleksibot`, 'jpegThumbnail': global.thumb}}}
+const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282296959969-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: global.thumb, surface: 200, message: `©AyakaBoT`, orderTitle: 'AyakaBoT', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+		const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `©AyakaBoT`,jpegThumbnail: global.thumb}}}
+		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "6282296959969-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
+		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":`© ${global.owner}`, "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': `©AyakaBoT`, 'jpegThumbnail': global.thumb}}}
+		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6282296959969-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `©AyakaBoT`, 'jpegThumbnail': global.thumb}}}
+		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "6282296959969-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`P`, "h": `Hmm`,'seconds': '359996400', 'caption': `AyakaBoT`, 'jpegThumbnail': global.thumb}}}
 		const floc = {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `P`,jpegThumbnail: global.thumb}}}
 // Group
 const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch(e => {}) : ''
@@ -800,7 +800,7 @@ user.afkReason = ''
 
 switch (ar) {
 case 'bot': {
-m.reply(`Iya sayang silahkan ketik ${prefix}menu`);
+m.reply(`Iya bos silahkan ketik ${prefix}menu`);
 }
 break
 
@@ -828,7 +828,7 @@ break
 
 case 'pagi': case 'pagii': case 'morning': case 'enjing': case 'isuk': {
 if (jam >= 4 && jam <= 9) {
-m.reply(`${ar} juga sayang❤️`);
+m.reply(`${ar} juga`);
 } else if (jam >= 10 && jam <= 15) {
 m.reply(`${ar} apaan, ini mah udah siang`);
 } else if (jam >= 16 && jam <= 18) {
@@ -843,7 +843,7 @@ case 'siang': case 'siangg': case 'siank': case 'ciank': case 'ciang': case 'awa
 if (jam >= 4 && jam <= 9) {
 m.reply(`${ar} apaan, ini mah masih pagi`);
 } else if (jam >= 10 && jam <= 15) {
-m.reply(`${ar} juga sayang❤️`);
+m.reply(`${ar} juga`);
 } else if (jam >= 16 && jam <= 18) {
 m.reply(`${ar} apaan, ini mah udah sore`);
 } else {
@@ -858,7 +858,7 @@ m.reply(`${ar} apaan, ini mah masih pagi`);
 } else if (jam >= 10 && jam <= 15) {
 m.reply(`${ar} apaan, ini mah masih siang`);
 } else if (jam >= 16 && jam <= 18) {
-m.reply(`${ar} juga sayang❤️`);
+m.reply(`${ar} juga`);
 } else {
 m.reply(`${ar} apaan, ini mah udah malem`);
 };
@@ -873,7 +873,7 @@ m.reply(`${ar} apaan, ini mah masih siang`);
 } else if (jam >= 16 && jam <= 18) {
 m.reply(`${ar} apaan, ini mah masih sore`);
 } else {
-m.reply(`${ar} juga sayang❤️`);
+m.reply(`${ar} juga`);
 };
 }
 break
@@ -980,7 +980,7 @@ delete this.suit[id]
 }
 break
 case 'sc': {
-m.reply(`Script : ${global.sourceurl}\n\n Dont Forget Give Star\n\nDonate : 62895369318181 (DANA, GOPAY)\n\n Dont Forget Donate`)
+m.reply(`Script : ${global.sourceurl}\n\n Dont Forget Give Star\n\nDonate : 6282296959969 (DANA, GOPAY)\n\n Dont Forget Donate`)
 }
 break
 case 'chat': {
@@ -1019,12 +1019,6 @@ terjawab: Array.from(random.jawaban, () => false),
 hadiah: 6,
 }
 }
-break
-case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
-if (!m.quoted && !text) throw `Kirim/reply text dengan caption ${prefix + command}`
-ter = command[1].toLowerCase()
-tex = m.quoted ? m.quoted.text ? m.quoted.text : q ? q : m.text : q ? q : m.text
-m.reply(tex.replace(/[aiueo]/g, ter).replace(/[AIUEO]/g, ter.toUpperCase()))
 break
 case 'tebak': {
 if (!text) throw `Example : ${prefix + command} lagu\n\nOption : \n1. lagu\n2. gambar\n3. kata\n4. kalimat\n5. lirik\n6.bendera`
@@ -1616,7 +1610,7 @@ break
 // Detect Group Invite
 if (m.mtype === 'groupInviteMessage') {
 teks = `Ketik join untuk bergabung ke group whatsapp anda`
-sendOrder(m.chat, teks, "391028153034238", fs.readFileSync('./src/test.jpg'), 2022, "BLUEHATBOT~MD", "62895369318181@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
+sendOrder(m.chat, teks, "391028153034238", fs.readFileSync('./src/test.jpg'), 2022, "AyakaBOT~MD", "6282296959969@s.whatsapp.net", "AR7zJt8MasFx2Uir/fdxhkhPGDbswfWrAr2gmoyqNZ/0Wg==", "99999999999999999999")
 }
 case 'mute': {
 if (!m.isGroup) throw mess.group
@@ -2349,7 +2343,7 @@ headerType: 4
 client.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 break
-            case 'cecan': case 'cewek': {
+            case 'cecan': {
             let buttons = [
                     {buttonId: `cecan`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
                 ]
@@ -2391,7 +2385,7 @@ break
                 client.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
     break
-            case 'cogan': case 'cowok': {
+            case 'cogan': {
             let buttons = [
                     {buttonId: `cogan`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
                 ]
@@ -2412,20 +2406,6 @@ break
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/blackpink?apikey=ThadzBotZ' },
                     caption: `Ini Kak Fans Mu Jangan Sang3 Ya 😅`,
-                    footer: client.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                client.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-    break
-            case 'hentai': case 'bokep': {
-            let buttons = [
-                    {buttonId: `menu`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
-                ]
-                let buttonMessage = {
-                    image: { url: 'https://api.lolhuman.xyz/api/random/nsfw/hentai?apikey=ThadzBotZ' },
-                    caption: `Yang Spam Anak Anjg 😡`,
                     footer: client.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2489,7 +2469,7 @@ break
                 client.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
     break
-            case 'memeindo': case 'ketawa': {
+            case 'memeindo': {
             let buttons = [
                     {buttonId: `memeindo`, buttonText: {displayText: 'Yang Ngakak Lagi Dong'}, type: 1}
                 ]
@@ -2503,7 +2483,7 @@ break
                 client.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
     break
-            case 'meme': case 'hahaha': {
+            case 'meme': {
             let buttons = [
                     {buttonId: `meme`, buttonText: {displayText: 'Next The Fun😂'}, type: 1}
                 ]
@@ -2545,20 +2525,7 @@ break
                 client.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
     break
-            case 'bokepdl': case 'dosadong': {
-            let buttons = [
-                    {buttonId: `memeindo`, buttonText: {displayText: 'Lagi Woii 🙈'}, type: 1}
-                ]
-                let buttonMessage = {
-                    video: { url: 'https://yog-apikey.herokuapp.com/api/bokep?apikey=YogGanz' },
-                    caption: `Ini Bokepnya Kak 🗿`,
-                    footer: client.user.name,
-                    buttons: buttons,
-                    headerType: 4
-                }
-                client.sendMessage(m.chat, buttonMessage, { quoted: m })
-            }
-            break
+           
 case 'bully': case 'cuddle': case 'hug': case 'kiss': case 'lick': case 'pat': case 'bonk': case 'smug': case 'yeet': case 'blush': case 'smile': case 'wave': case 'highfive': case 'handhold': case 'nom': case 'bite': case 'glomp': case 'slap': case 'kill': case 'happy': case 'wink': case 'poke': case 'dance': case 'cringe': {
   let anu = await fetchJson(api('waifu', '/' + command))
   let encmedia = await client.sendImageAsSticker(m.chat, anu.url, m, { packname: global.packname, author: global.author})
@@ -3997,216 +3964,6 @@ break
                                                         }
 break
 break
-case 'siaranpremium' : case 'premiumsiaran': {
-if (jam >= 5 && jam <= 9) {
-ucapan = 'Selamat Pagi!⛅\nTerima Kasih Atas Berkunjung'
-} else if (jam >= 10 && jam <= 14) {
-ucapan = 'Selamat Siang!☀️\nTerima Kasih Atas Berkunjung'
-} else if (jam >= 15 && jam <= 17) {
-ucapan = 'Selamat Sore!🌄\nTerima Kasih Atas Berkunjung'
-} else if (jam >= 18 && jam <= 20) {
-ucapan = 'Selamat Petang!🌕\nTerima Kasih Atas Berkunjung'
-} else if (jam >= 21 && jam <= 23) {
-ucapan = 'Selamat Malam!🌘\nTerima Kasih Atas Berkunjung'
-} else {
-ucapan = 'Sudah larut malam, Jangan lupa Tutup Kak!😴'
-} 
-countDownDate = new Date(`${global.tanggal},00:00:00`).getTime();
-now = new Date().getTime();
-distance = countDownDate - now;
-days = Math.floor(distance / (1000 * 60 * 60 * 24));
-if (distance < 0) {
-times = ("Terlewat");
-} else {
-times = (days + " Hari Lagi Menuju " + global.acara);
-}
-locale = 'id'
-d = new Date(new Date + 3600000)
-week = d.toLocaleDateString(locale, {
-weekday: 'long'
-})
-date = d.toLocaleDateString(locale, {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-})
-dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-}).format(d)
-wib = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-let anu = `🔥S I A R A N P R E M I U M🔥
-
-${ucapan}
-
-📢  *INFO*  📢
-📍 *Bot Name* : *${global.botname}*
-📍 *Jam* : *${wib}*
-📍 *Tanggal* : *${week}, ${date}*
-📍 *Tanggal Islam* : *${dateIslamic}*
-📍 *Aktif* : *${runtime(process.uptime())}*
-📍 *Prefix* : 「  *MULTI*  」
-📍 *Nama* : *${pushname}*
-📍 *${times}*
-
-Hay ${pushname}👋, *---------------------------------------*
-   🎥 *LAYANAN SIARAN PREMIUM* 🎥
-                   🎥 *JADISTORESHOP™* 🎥
-*---------------------------------------*
-
-🎬 _*NETFLIX PREMIUM*_ 🎬 *---------------------------------------*
-▫️ *NETFLIX PREMIUM SHARED*
-[ 3 HARI - 2 USER ]
-[ TV - MOBILE - DESKSTOP ]
-=> [Rp 6.000]
-▫️ *NETFLIX PREMIUM SHARED*
-[ 7 HARI - 2 USER ]
-[ TV - MOBILE - DESKSTOP ]
-=> [Rp 9.500]
-▫️ *NETFLIX PREMIUM SHARED*
-[ 1 BULAN - 2 USER ]
-[ TV - MOBILE - DESKSTOP ]
-=> [Rp 19.500]
-▫️ *NETFLIX PREMIUM SHARED*
-[ 1 BULAN - MOBILE - VPN ]
-=> [Rp 22.000]
-▫️ *NETFLIX PREMIUM SHARED*
-[ 1 BULAN - 1 USER ]
-=> [Rp 28.000]
-▫️ *NETFLIX PREMIUM SHARED*
-[ 1 BULAN - 5 PROFILE ]
-=> [Rp 120.000]
-
-*---------------------------------------*
-🎬 _*IQIYI PREMIUM*_ 🎬
-*---------------------------------------*
-▫️ *IQIYI PREMIUM SHARED*
-[ 1 BULAN ]
-=> [Rp 18.500]
-▫️ *IQIYI PREMIUM PRIVATE*
-[ 1 BULAN - 2 DEVICE ]
-=> [Rp 22.000]
-
-*---------------------------------------*
-🎬 _*WE-TV PREMIUM *_🎬 *---------------------------------------*
-▫️ *WE-TV PREMIUM SHARED*
-[ 1 BULAN ]
-=> [Rp 9.000]
-▫️ *WE-TV PREMIUM SHARED*
-[ 1 TAHUN ]
-=> [Rp 31.000]
-▫️ *WE-TV PREMIUM PRIVATE*
-[ 1 BULAN ]
-=> [Rp 32.500]
-
-*---------------------------------------*
-🎬 _*DISNEY HOTSTAR PREMIUM *_🎬
-*---------------------------------------*
-▫️ *DISNEY + HOTSTAR SHARED* 
-[ 1 BULAN ]
-=> [Rp 15.500]
-▫️ *DISNEY - HOTSTAR SHARED*
-[ 2 BULAN ]
-=> [Rp 29.000]
-
-*---------------------------------------*
-🎬 _*YOUTUBE PREMIUM*_ 🎬 *---------------------------------------*
-▫️ *YOUTUBE PREMIUM ANGGOTA*
-[ 1 BULAN - INVITE ]
-=> [Rp 3.500]
-▫️ *YOUTUBE PREMIUM FAMILY*
-[ 1 BULAN - 5 ANGGOTA ]
-=> [Rp 5.500]
-▫️ *YOUTUBE PREMIUM INDIVIDU*
- [ 4 BULAN ]
-=> [Rp 13.500]
-
-*---------------------------------------*
-🎬 _*CANVA PREMIUM*_🎬
-*---------------------------------------*
-▫️ *CANVA PRO*
-[ 1 BULAN ]
-=> [Rp 6.000]
-▫️ *CANVA PRO*
-[ 1 TAHUN - GARANSI 6 BULAN ]
-=> [Rp 14.500]
-▫️ *CANVA PRO*
-[ PERMANENT - GARANSI 1 TAHUN ]
-=> [Rp 18.500]
-
-*---------------------------------------*
-🎬 _*VIDEO PREMIER PREMIUM*_🎬 
-*---------------------------------------*
-▫️ *VIDEO PREMIER SHARED*
-[ 1 BULAN ]
-=> [Rp 17.500]
-▫️ *VIDEO PREMIER PRIVATE*
-[ 1 BULAN ]
-=> [Rp 29.000]
-
-*---------------------------------------*
-🎬 _*SPOTIFY PREMIUM*_🎬 
-*---------------------------------------*
-▫️ *SPOTIFY PREMIUM ANGGOTA*
-[ 2 BULAN - INVITE - INDO]
-=> [Rp 12.500]
-▫️ *SPOTIFY PREMIUM ADMIN*
-[ 2 BULAN - INDO ]
-=> [Rp 22.000]
- 
-*---------------------------------------*
-🗒 NOTE :
-*SEMUA LAYANAN PREMIUM FULL GARANSI*
-*---------------------------------------*
-📢 WA ADMIN
-📞 wa.me/62895369318181`
-let btn = [{
-urlButton: {
-displayText: 'O R D E R H E R E',
-url: global.sourceurl
-}
-}, {
-callButton: {
-displayText: 'P E N J U A L',
-phoneNumber: global.phone
-}
-}, {
-quickReplyButton: {
-displayText: 'G A K B E L I',
-id: `${prefix}menu`
-}
-}, {
-quickReplyButton: {
-displayText: 'L A I N N Y A',
-id: `${prefix}othermenu`
-}  
-}, {
-quickReplyButton: {
-displayText: 'D O N A S I A J A',
-id: 'donasi'
-}
-}]
-client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
-}
-break
-case 'speedtest': {
-m.reply('Testing Speed...')
-let cp = require('child_process')
-let { promisify } = require('util')
-let exec = promisify(cp.exec).bind(cp)
-let o
-try {
-o = await exec('python speed.py')
-} catch (e) {
-o = e
-} finally {
-let { stdout, stderr } = o
-if (stdout.trim()) m.reply(stdout)
-if (stderr.trim()) m.reply(stderr)
-}
-}
-break
 case 'owner': case 'creator': {
 client.sendContact(m.chat, global.owner, m)
 }
@@ -4217,10 +3974,10 @@ break
                                                                 title: `Hi\n\n ${pushname}`,
                                                                 description: `🔥DASHBOARD🔥
 
-Selamat datang Bluehat Multi Device. di menu ini kalian bisa mendapatkan panduan soal bot whatsapp.\nOwner\n- Owner atau Pemilik Bot adalah orang yang membuat bot.OWNER BUKANLAH BOT.Chat owner apabila ada kepentingan atau ada yang perlu di tanyakan soal bot whatsapp,\n- Penjelasan OWNER/PEMILIK BOT\n\nhow\n- Cara menggunakan bot adalah dengan mengetikkan command bot. List command bot ada pada menu bot. jangan lupa,untuk mengakses command harus menggunakan prefix.\nPrefix Bluehatbot adalah all prefix.\nContoh penggunaan prefix dan command yang benar: *.menu*\n- Cara menggunakan bot dan prefix\n\nberlangganan\n- Layanan berlangganan Di Bluehatbot adalah dengan menyewa bot dalam jumlah waktu ke dalam group. Untuk list harga/layanan silahkan baca pada *.sewabot*\n- Berlangganan\n        \nbot\n- Bot adalah sebuah program komputer yang dijalankan di lingkungan. Bot Whatsapp adalah program komputer yang di-aplikasikan di whatsapp. Bot whatsapp diharapkan dapat membantu beberapa aktifitas maupun sekedar untuk senang senang.\n
+Selamat datang Ayaka Multi Device. di menu ini kalian bisa mendapatkan panduan soal bot whatsapp.\nOwner\n- Owner atau Pemilik Bot adalah orang yang membuat bot.OWNER BUKANLAH BOT.Chat owner apabila ada kepentingan atau ada yang perlu di tanyakan soal bot whatsapp,\n- Penjelasan OWNER/PEMILIK BOT\n\nhow\n- Cara menggunakan bot adalah dengan mengetikkan command bot. List command bot ada pada menu bot. jangan lupa,untuk mengakses command harus menggunakan prefix.\nPrefix Ayakabot adalah all prefix.\nContoh penggunaan prefix dan command yang benar: *.menu*\n- Cara menggunakan bot dan prefix\n\nberlangganan\n- Layanan berlangganan Di Ayakabot adalah dengan menyewa bot dalam jumlah waktu ke dalam group. Untuk list harga/layanan silahkan baca pada *.sewabot*\n- Berlangganan\n        \nbot\n- Bot adalah sebuah program komputer yang dijalankan di lingkungan. Bot Whatsapp adalah program komputer yang di-aplikasikan di whatsapp. Bot whatsapp diharapkan dapat membantu beberapa aktifitas maupun sekedar untuk senang senang.\n
 `,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `Hallo Kak Saya Adalah Bluehatbot Multi Device`,
+                                                                footerText: `Hallo Kak Saya Adalah Ayakabot Multi Device`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Jangan Spam Entar Di Kick Nangis",
@@ -4249,14 +4006,8 @@ Selamat datang Bluehat Multi Device. di menu ini kalian bisa mendapatkan panduan
                                                                                     "description": "Menampilkan Menu Anime",
                                                                                     "rowId": `${prefix}animemenu`
                                                                                 },
-                                                                                {
-                                                                                    
-                                                                                    "title": "🍂TOPUP PUBG🍂",
-                                                                                    "description": "Voucher Topup PUBG",
-                                                                                    "rowId": `${prefix}pubgtopup`
-                                                                                },
-                                                                                {
-                                                                                    
+                                                                                { 
+                                                                                   
                                                                                     "title": "🌹SEWABOT🌹",
                                                                                     "description": "Ayo Sewabot Dengan Harga Murah",
                                                                                     "rowId": `${prefix}sewabot`
@@ -4281,7 +4032,7 @@ break
                                             let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                             listMessage :{
                                                                 title: `Hi ${pushname}`,
-                                                                description: `🤖 BLUE HAT MULTI DEVICE 🤖
+                                                                description: `🤖 Ayaka BOT 🤖
 
 Semua Ada Disini 🙈
 
@@ -4311,10 +4062,6 @@ Day •> ${jangwak}
 • Memeindo
 • Meme
 • Wphd
-• Mltopup
-• Pubgtopup
-• Rulesorder
-• Siaranpremium
 • Payment
 • Formedit
 • Animemenu
@@ -4334,16 +4081,16 @@ Day •> ${jangwak}
 • Convertmenu
 • Searchmenu
 • Isadanalquran`,
-                                                                buttonText: "CLICK AYANG",
+                                                                buttonText: "CLICK DISINI",
                                                                 footerText: `Click Di Bawah Untuk Melanjutkan Ke Menu`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Click Dan Pilih",
                                                                             "rows": [
                                                                                 {
-                                                                                    "title": "⚡LANJUTKAN KE MENU",
-                                                                                    "description": "Tampilkan Menu",
-                                                                                    "rowId": `${prefix}nextmenu`
+                                                                                    "title": "⚡KESELURUHAN MENU",
+                                                                                    "description": "Tampilkan Semua Menu",
+                                                                                    "rowId": `${prefix}allmenu`
                                                                                 },
                                                                                 {
                                                                                 
@@ -4357,13 +4104,7 @@ Day •> ${jangwak}
                                                                                     "description": "Menampilkan Menu Anime",
                                                                                     "rowId": `${prefix}animemenu`
                                                                                 },
-                                                                                {
-                                                                                    
-                                                                                    "title": "✍️JASA EDIT FORM✍️",
-                                                                                    "description": "Jasa Edit Foto Blackpink And Other",
-                                                                                    "rowId": `${prefix}formedit`
-                                                                                },
-                                                                                {
+                                                                                { 
                                                                                     
                                                                                     "title": "🍂RULES BOT🍂",
                                                                                     "description": "Wajib Baca Biar Pinter",
@@ -4477,7 +4218,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka BOT Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4534,7 +4275,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka BOT Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4584,7 +4325,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `AyakaBOT Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4643,7 +4384,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4688,7 +4429,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4735,7 +4476,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4786,7 +4527,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -4833,7 +4574,7 @@ break
  
  ╰───[ K O L E K S I - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
-                                                                footerText: `BlueHat Multi Device 🤖 Version : 2.0.1`,
+                                                                footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Fitur Bot",
@@ -5125,7 +4866,6 @@ break
                                                                 title: `Hi ${pushname}`,
                                                                 description: `├───[   ANIME MENU  ]────
  
-➤ ${prefix}hentai 
 ➤ ${prefix}lolivideo 
 ➤ ${prefix}waifu 
 ➤ ${prefix}neko 
@@ -5171,12 +4911,6 @@ break
                                                                                     "rowId": `${prefix}makermenu`
                                                                                 },
                                                                                 
-                                                                                {
-                                                                                    
-                                                                                    "title": "🙈NONTON VIDEO DEWASA,🙈",
-                                                                                    "description": "Ya Taulah Isinya Apaan",
-                                                                                    "rowId": `${prefix}memeindo`
-                                                                                },
                                                                                 {
                                                                                 
                                                                                     "title": ",🌹DONASI🌹",
@@ -5340,15 +5074,15 @@ ${ucapan}
 
 *E-WALLET* ☑️
 💳 *DANA*
-➤ Ahmad        =  \`\`\`0895369318181\`\`\`
-➤ Ahmad      =  \`\`\`0895369318181\`\`\`
+➤ Ahmad        =  \`\`\`082296959969\`\`\`
+➤ Ahmad      =  \`\`\`082296959969\`\`\`
 💳 *GOPAY*
-➤ Ahmad        =  \`\`\`0895369318181\`\`\`
+➤ Ahmad        =  \`\`\`082296959969\`\`\`
 💳 *OVO*
-➤ Ahmad        =  \`\`\`0895369318181\`\`\`
-➤ Ahmad      =  \`\`\`0895369318181\`\`\`
+➤ Ahmad        =  \`\`\`BELUM TERSEDIA SAAT INI\`\`\`
+➤ Ahmad      =  \`\`\`BELUM TERSEDIA SAAT INI\`\`\`
 💳 *SHOPEEPAY*
-➤ Ahmad           =  \`\`\`0895369318181\`\`\`
+➤ Ahmad           =  \`\`\`085290572120\`\`\`
 ━━━━━━━━━━━━━━━━━━
 *ATM* ☑️
 🏦 BCA
@@ -5441,692 +5175,6 @@ Selamat datang di menu panduan BOT. di menu ini kalian bisa mendapatkan panduan 
 
 Ada keperluan dengan owner bot?
 ketik *${prefix}chatowner* pesan kamu atau ketik *${prefix}owner* untuk mengetahui kontak owner`
-let btn = [{
-urlButton: {
-displayText: 'S C R I P T',
-url: global.sourceurl
-}
-}, {
-callButton: {
-displayText: 'O W N E R',
-phoneNumber: global.phone
-}
-}, {
-quickReplyButton: {
-displayText: '⚙️ T A M P I L K A N S E M U A ⚙️',
-id: `${prefix}allmenu`
-}
-}, {
-quickReplyButton: {
-displayText: '🎮 B E R M A I N G A M E 🎮',
-id: `${prefix}gamemenu`
-}  
-}, {
-quickReplyButton: {
-displayText: '💸 S E W A B O T 💸',
-id: 'sewabot'
-}
-}]
-client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
-}
-break
-case 'linkbokep' : case '18+': {
-if (jam >= 5 && jam <= 9) {
-ucapan = 'Selamat Pagi!⛅\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 10 && jam <= 14) {
-ucapan = 'Selamat Siang!☀️\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 15 && jam <= 17) {
-ucapan = 'Selamat Sore!🌄\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 18 && jam <= 20) {
-ucapan = 'Selamat Petang!🌕\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 21 && jam <= 23) {
-ucapan = 'Selamat Malam!🌘\nTerima Kasih Atas Kunjungan Anda'
-} else {
-ucapan = 'Sudah larut malam, Jangan lupa istirahat!😴'
-} 
-countDownDate = new Date(`${global.tanggal},00:00:00`).getTime();
-now = new Date().getTime();
-distance = countDownDate - now;
-days = Math.floor(distance / (1000 * 60 * 60 * 24));
-if (distance < 0) {
-times = ("Terlewat");
-} else {
-times = (days + " Hari Lagi Menuju " + global.acara);
-}
-locale = 'id'
-d = new Date(new Date + 3600000)
-week = d.toLocaleDateString(locale, {
-weekday: 'long'
-})
-date = d.toLocaleDateString(locale, {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-})
-dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-}).format(d)
-wib = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-let anu = `🔥D O S A T A N G G U N G S E N D I R I🔥
-
-${ucapan}
-
-📢  *INFO*  📢
-📍 *Bot Name* : *${global.botname}*
-📍 *Jam* : *${wib}*
-📍 *Tanggal* : *${week}, ${date}*
-📍 *Tanggal Islam* : *${dateIslamic}*
-📍 *Aktif* : *${runtime(process.uptime())}*
-📍 *Prefix* : 「  *MULTI*  」
-📍 *Nama* : *${pushname}*
-📍 *${times}*
-
-https://dood.pm/e/m3cbd9h913ibq40std2eoc7frx62vyf9
-https://dood.pm/e/sg99wda6vc09i03caeefhohg8g8djanl
-https://dood.pm/e/xdat9p9gde28otw2okaqwatn9cduf7i5
-https://dood.pm/e/ve0oqde2368oz6ttc9kyea1m5htfp9gz
-https://dood.pm/e/fmt033ysddw6a6e2lc59vddh01nh5b7h
-https://dood.pm/e/c1wdkkdf61vnjgg41f5lq9vkn3jncbau
-https://dood.pm/e/wrczp9ktc99ayelizzq0tpfxuif3e7tn
-https://dood.pm/e/tifh52t6i0ygpoa14l82h7n4f4xksida
-https://dood.pm/e/enj4ssqpl9u85s5pfhjnkgb2bfgl7s71
-https://dood.pm/e/yucl8recrdcqzxt9p5meibdieslhigkh
-https://dood.pm/e/h7f58ujimjhalywb3qamnxsyl7m3tnap
-https://dood.pm/e/hmgsk35v14hdmqueznjbalep8h009in2
-https://dood.pm/e/kn4c82xo4qru2k4t1q42enviaop30auf
-https://dood.pm/e/bse732hcnamunjz91csvab0zz61qqnay
-https://dood.pm/e/cnzxqi2mvddxztynj9zt6noxgd59dsqn
-https://dood.pm/e/6mvny4kbyyeecicwhm6t0ftl5j6fgr3o
-https://dood.pm/e/yutguzkmhunnia7s0p67843qeel8x7rc
-https://dood.pm/e/onsdba83uykyoq4f573909vo31d4ei5n
-https://dood.pm/e/7ylpgn4rgpgfg7ptx3n1lv72pmjpq63d
-https://dood.pm/e/0zsl4xti15bwfvea2f74osqz1b4q2xd0
-https://dood.pm/e/usw1o97f48sp554fez2ekdsv7u8diy45
-https://dood.pm/e/or01jrb3x3x6fguq95hpn0kgph2lrcpt
-https://dood.pm/e/p5qvt0tnt832lfqoxrfbj3f89tbg41fc
-https://dood.pm/e/feff6vepb2vaudvhyr786oqlxvllon63
-https://dood.pm/e/odzo9jg0kpz3a6nm3fgmv2m2gi3ja2ec
-https://dood.pm/e/man0zsmt3519galivxzxzm9a94d9tdl6
-https://dood.pm/e/jrwgeu9u8dn1d733nygj67u38z0jzint
-https://dood.pm/e/pkzwgyseqa56l7wtzh2jj6298cc22mu4
-https://dood.pm/e/5qwy1dn654utrhlgrf4z6vpooliea9b3
-https://dood.pm/e/2zkc4doh1pbun2y4fjhz1pbparmr47s0
-https://dood.pm/e/61802m197wa1aapf1zr07ofh7ew7wmpz
-https://dood.pm/e/15x3n1ad47brsp1zhdhq94bo2s48gwqa
-https://dood.pm/e/uzhtueg6gi5uulu6wrehz14ynml2sp8v
-https://dood.pm/e/aixcn07tr9fnzfupjsbbwa3fses27nc9
-https://dood.pm/e/hta6chvjw480g4yrtj4loxpryg4sdsqi
-https://dood.pm/e/1cxo1h50a4x3m4e6m5jswjot0l1wox99
-https://dood.pm/e/rthk4hz0kn2wipm5tn5cr98fvplusg2d
-https://dood.pm/e/qxsamwtocw39kpg52un65t08bdj5l14b
-https://dood.pm/e/2rla3cwhovmhk1wfa71kqa107t8hc2p0
-https://dood.pm/e/chxuplr05jsay0jpiov4gv34puk8z9g6
-https://dood.pm/e/c0ujsve3hqt1mu2s3bmf4kp04sq4geoh
-https://dood.pm/e/07cci6kr2l797r97wtkf2qi9498zv52j
-https://dood.pm/e/wotzprjrh4nh2m0szy2men2cchlfoor0
-https://dood.pm/e/4hbo87dqj9hqbyzl7hwkla37y5rimfab
-https://dood.pm/e/p5frjw4zfru4le1xbewgvulww8omj2xo
-https://dood.pm/e/znqph0cv5m7gprjkdw6orn1vm9ovp70j
-https://dood.pm/e/cvwygxr3shywcq0gc22y6rj5yi8i4bz0
-https://dood.pm/e/t33oxv5eqxcxbs24hvo01h6xu90e35cd
-https://dood.pm/e/gczxntr3mqsrr500igrdsu6bu52pk8pv
-https://dood.pm/e/7yt8dm7ldfrz4qqru7ezuw9dpzg1nwj1
-https://dood.pm/e/6t3lvntyr77w94n20d587q7zb4xmslv6
-https://dood.pm/e/dhphh9xtd79tkrmp8eo5buvlrbe90g9m
-https://dood.pm/e/q0t22qo1qxeawjm0svy2u82znwycwxc4
-https://dood.pm/e/74ol77tiuw86eoe1rn7qc7pnooj81bni
-https://dood.pm/e/5yevz6opeokxpex3ffzpbm4ccv0fek60
-https://dood.pm/e/6nl8fg0bw0tlm9uuikvyfamkas740ioe
-https://dood.pm/e/vzpe8y8f97bb4mikgn9b774cevnfte1o
-https://dood.pm/e/y252u2m4ldsry2jnv3uf3jv8572a79wk
-https://dood.pm/e/u36yndnbkwra7hu3tw2qwfd58iudzsxs
-https://dood.pm/e/0904wvkhdk4azaszohra1yd07yya4mit
-https://dood.pm/e/aqw51a4iufsb1xctsawomkak7lqebz6k
-https://dood.pm/e/kp9ge4xr63sris5mor85d2fyihwtaq6r
-https://dood.pm/e/tplcoro09ovmg7asvez8c738rvl4ra66
-https://dood.pm/e/3ahahgqqhkk855cy3m4xw57ll226tnqs
-https://dood.pm/e/8pzn28e762tgtn1slw5b5aohlsuo9492
-https://dood.pm/e/oyo5mi00tzug0gue1117cu030abv6n8s
-https://dood.pm/e/pcr148srr56mocqsoong8bnretrr2gkz
-https://dood.pm/e/6wcr8xn0n8wq2mic485sth1hrsduma5h
-https://dood.pm/e/dkxpyj4aw1je5v8v8ebjbl4ou7kzk4nh
-https://dood.pm/e/r80r17qz0idnthr5y5mizv0bkwekx86r
-https://dood.pm/e/kuh67h76r2c228kbyxbjhsbd5hufh3zl
-https://dood.pm/e/nzf1ubfxuz0nftrjftrr845qw89spv0x
-https://dood.pm/e/5pvqu4qvrxdrwors57qm813fgn6h55ra
-https://dood.pm/e/3zyp23yug5f4ve4nmyogu6wtaz9rac9w
-https://dood.pm/e/q5w7xkrl83o5e68nh4sl90j5kwqdpymp
-https://dood.pm/e/o1crn8b4pq5zex85hkevlue832kvbzmx
-https://dood.pm/e/sycvodsjgtayav795bxnehfti4zpexa8
-https://dood.pm/e/1cdv9bax7312vrpo9kqkwjtca28j8xre
-https://dood.pm/e/h0hq3641u9xm5w5bit2o03njs93ctueb
-https://dood.pm/e/bi1sim8pv87dzbi4b4y95ze5njfr900k
-https://dood.pm/e/2gfz35y4r3qajaasovdtyjdu99vi6how
-https://dood.pm/e/bspijxriinuub81cc670l8wdc10x3bjq
-https://dood.pm/e/yhvrauyns8cx0rbovfm17ha7b1asg7hr
-https://dood.pm/e/dbp9q5hecau4eb67gmyv00roue84v37h
-https://dood.pm/e/l9jbwy2rpwoct92fnyk725emasixe3oi
-https://dood.pm/e/g2lgzmkq804l1pnyslnm3d9dbvu928nl
-https://dood.pm/e/hdyulimejs3ittiiwtxyfybtboidqcae
-https://dood.pm/e/81q4hxfj79rkmrv82g2x2301hr2dqzjo
-https://dood.pm/e/owr4znjzxnsummvfv1a3nt9tcs9d8ihg
-https://dood.pm/e/798lob1rjqrvp7umclp9sic5kqyofvwn
-https://dood.pm/e/8pt84f2sgrjlm91m8sk6vgvmubci8xp7
-https://dood.pm/e/vvlnklpsqei2gd3aeebresjptmj04z4p
-https://dood.pm/e/jczyc8wclnoli90h894hkbj2j19o0cgg
-https://dood.pm/e/21ujcagdgu8ubk6dvda6oqagletthdzm
-https://dood.pm/e/yw6jrgvs0y6vsjtmow63xmlk3zpgw3jg
-https://dood.pm/e/pd3kfi1knwfbk2l5wg5em2qbbn3l6xka
-https://dood.pm/e/l318iqxjt3w8vdgqo7gprbtkp0yps5v0
-https://dood.pm/e/t5bxg97zmmz3vb3x8tgmim2qkevtgv1j
-https://dood.pm/e/rv7ezrrklxuv3ruo9plxh9tf4vb8g7k0
-https://dood.pm/e/two7dtneqb4sxdoi17n6djdn5x760n47
-https://dood.pm/e/a329rmyfyn1rp88qaj1xuqnedu5a5iuj
-https://dood.pm/e/lk4wota7l9j7hvwpwdwx3feso9gd3zhh
-https://dood.pm/e/x3lywsx5k41ue3ktwdvyxa9uglw1vw4r
-https://dood.pm/e/14lpyfdh6vd6ojbc38f0830dgy1523jv
-https://dood.pm/e/8qh73pfh7hezoo7a322u3pc5dt8mw7ho
-https://dood.pm/e/0rt8twcrtpic4bvtc53u7a510swhzpez
-https://dood.pm/e/qjda5v9zoj6s836ido7hlmj7tkx5ts26
-https://dood.pm/e/ykm6it8uxyeo2i2u0yh0w8xfjy998vh9
-https://dood.pm/e/xi3fz5reb5sqj2glzixvhf7kkdpfhf62
-https://dood.pm/e/4o9cq5u2kqt78az2lr49lqx9pu1teuzt
-https://dood.pm/e/459k5uzk99td1tjrmtk7hphecvb2t4oj
-https://dood.pm/e/w2hy5ura5iljsx4yjkw9nvr1awjgkvno
-https://dood.pm/e/la093g5nmpqvyuk6jpj7z6po3fkfga2x
-https://dood.pm/e/stunbanh4wmk2icav9xyvxi3atijjjos`
-let btn = [{
-urlButton: {
-displayText: 'S C R I P T',
-url: global.sourceurl
-}
-}, {
-callButton: {
-displayText: 'O W N E R',
-phoneNumber: global.phone
-}
-}, {
-quickReplyButton: {
-displayText: '🗿A L L M E N U 🗿',
-id: `${prefix}allmenu`
-}
-}, {
-quickReplyButton: {
-displayText: '🤖 R U L E S B O T 🤖',
-id: `${prefix}rulesbot`
-}  
-}, {
-quickReplyButton: {
-displayText: '💸 S E W A B O T 💸',
-id: 'sewabot'
-}
-}]
-client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
-}
-break
-                                          case 'pubgtopup':{
-                                            let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                                                            listMessage :{
-                                                                title: `Hi ${pushname}`,
-                                                                description: `🔥 T O P U P G A M E 🔥
-
-┏━━━━━━━━━━━━━━┃
-┃               「 💵 *LIST UC* 」
-┃    「 🎮*PUBG MOBILE FAST* 」
-┃    「 🇮🇩*REGION INDONESIA* 」
-┃ ━━━━━━━━━━━━━━┃
-┃⏳*5 - 10 MENIT MAX 3 JAM*
-┃⏱*OPEN JAM 08.00 - 22.00 WIB*
-┗━━━━━━━━━━━━━━┃
-┃16💵 = Rp2.700
-┃26💵 = Rp4.550
-┃52💵 = Rp9.000
-┃105💵 = Rp18.000
-┃131💵 = Rp22.500
-┃263💵 = Rp44.000
-┃530💵 = Rp87.000
-┃825💵 = Rp130.000
-┃1100💵 = Rp172.500
-┃1925💵 = Rp302.000
-┃2200💵 = Rp348.500
-┃2463💵 = Rp389.500
-┃2730💵 = Rp433.000
-┃3025💵 = Rp477.500
-┃3300💵 = Rp513.000
-┃3563💵 = Rp566.500
-┃3830💵 = Rp610.500
-┃4125💵 = Rp653.000
-┃4400💵 = Rp697.000
-┃4663💵 = Rp790.000
-┃4930💵 = Rp784.000
-┃5500💵 = Rp870.000
-┃6600💵 = Rp1.038.000
-┃7700💵 = Rp1.208.000
-┃8800💵 = Rp1.381.000
-┃9900💵 = Rp1.556.000
-┃10005💵 = Rp1.567.000
-┗━━━━━━━━━━━━━━⬣
-┃📝 *FORMAT ORDER*
-┃Nickname :
-┃Id :
-┃Order UC :
-┃Region :
-┃Paket : PUBG A
-┃Sisa UC :
-┃
-┗━━━━━━━━━━━━━━┃
-┏━━━━━━━━━━━━━━┃
-┃               「 💵 *LIST UC* 」
-┃「 🎮*PUBG MOBILE SEMIFAST* 」
-┃     「 🇮🇩*REGION INDONESIA* 」
-⬣ ━━━━━━━━━━━━━━┃
-┃⏳*10-180 MENIT MAX 24 JAM*
-┃⏱*OPEN JAM 10.00 - 19.00 WIB*
-┗━━━━━━━━━━━━━━┃
-┃263💵 = Rp46.500
-┃525💵 = Rp90.000
-┃788💵 = Rp134.500
-┃1050💵 = Rp179.500
-┃1375💵 = Rp224.000
-┃1638💵 = Rp269.000
-┃1900💵 = Rp313.500
-┃2163💵 = Rp358.500
-┃2425💵 = Rp403.500
-┃2875💵 = Rp448.000
-┃3138💵 = Rp493.000
-┃3400💵 = Rp537.500
-┃3925💵 = Rp627.500
-┃4250💵 = Rp672.000
-┃6000💵 = Rp896.900
-┃9375💵 = 1.344.000
-┃46875💵 = 6.720.000
-┃93750💵 = Rp13.340.000
-┗━━━━━━━━━━━━━━┃
-┃📝 *FORMAT ORDER*
-┃Nickname :
-┃Id :
-┃Order UC :
-┃Region :
-┃Paket : PUBG B
-┃Sisa UC :
-┗━━━━━━━━━━━━━━┃
-┏━━┃「 🗒*NOTE * 」━━━━━━┃
-┃  *JIKA ADA KESALAHAN*
-┃  *ID & NICKNAME 100% BUKAN*
-┃  *TANGGUNG JAWAB ADMIN*
-┗━━━━━━━━━━━━━━━━┃
- ╰───[ K O L E K S I - B O T   ]───`,
-                                                                buttonText: "OTHER",
-                                                                footerText: `Click Untuk Mencari Vitur Lain`,
-                                                                listType: "SINGLE_SELECT",
-                                                                sections: [{
-                                                                            "title": "Click Dan Pilih",
-                                                                            "rows": [
-                                                                                {
-                                                                                    "title": ",🔥ALL MENU🔥",
-                                                                                    "description": "Menampilkan Semua Menu Di Bot 🗿",
-                                                                                    "rowId": `${prefix}allmenu`
-                                                                                },
-                                                                                
-                                                                                {
-                                                                                    
-                                                                                    "title": "😱 MAIN MENU😱",
-                                                                                    "description": "Vitur Terbaru Di Bot",
-                                                                                    "rowId": `${prefix}mainmenu`
-                                                                                },
-                                                                                {
-                                                                                
-                                                                                    "title": ",😎 MAKER MENU 😎",
-                                                                                    "description": "Editor Limitin Gambar",
-                                                                                    "rowId": `${prefix}makermenu`
-                                                                                },
-                                                                                {
-                                                                                    
-                                                                                    "title": "B A C K T O M E N U ▶️",
-                                                                                    "description": "Kembali Ke Menu 🤖",
-                                                                                    "rowId": `${prefix}menu`
-                                                                                }
-                                                                            ]
-                                                                       
-                                                                        }
-                                                                    ],
-                                                      listType: 1
-                                                            }
-                                                        }), {})
-                                                        client.relayMessage(m.chat, template.message, { messageId: template.key.id })
-                                                        }
-                                                        break
-case 'mltopup': {
-if (jam >= 5 && jam <= 9) {
-ucapan = 'Selamat Pagi!⛅\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 10 && jam <= 14) {
-ucapan = 'Selamat Siang!☀️\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 15 && jam <= 17) {
-ucapan = 'Selamat Sore!🌄\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 18 && jam <= 20) {
-ucapan = 'Selamat Petang!🌕\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 21 && jam <= 23) {
-ucapan = 'Selamat Malam!🌘\nTerima Kasih Atas Kunjungan Anda'
-} else {
-ucapan = 'Sudah larut malam, Jangan lupa istirahat!😴'
-} 
-countDownDate = new Date(`${global.tanggal},00:00:00`).getTime();
-now = new Date().getTime();
-distance = countDownDate - now;
-days = Math.floor(distance / (1000 * 60 * 60 * 24));
-if (distance < 0) {
-times = ("Terlewat");
-} else {
-times = (days + " Hari Lagi Menuju " + global.acara);
-}
-locale = 'id'
-d = new Date(new Date + 3600000)
-week = d.toLocaleDateString(locale, {
-weekday: 'long'
-})
-date = d.toLocaleDateString(locale, {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-})
-dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-}).format(d)
-wib = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-let anu = `🔥 M O B I L E L E G E N D S 🔥
-
-━━━━━━━━━━━━━━━━━━
-*MOBILE LEGENDS A* ✅
-⏳ _1-5 MENIT MAX 60 MENIT_
-━━━━━━━━━━━━━━━━━━
-\`\`\`➤ 86   💎  =  Rp20.150
-➤ 172  💎  =  Rp40.300
-➤ 257  💎  =  Rp60.450
-➤ 344  💎  =  Rp80.600
-➤ 429  💎  =  Rp100.750
-➤ 514  💎  =  Rp120.900
-➤ 600  💎  =  Rp141.050
-➤ 706  💎  =  Rp161.200
-➤ 792  💎  =  Rp181.350
-➤ 878  💎  =  Rp201.500
-➤ 963  💎  =  Rp221.650
-➤ 1050 💎  =  Rp241.800
-➤ 1412 💎  =  Rp322.400
-➤ 2195 💎  =  Rp483.600
-➤ 3688 💎  =  Rp806.000
-➤ 4032 💎  =  Rp886.600
-➤ 5532 💎  =  Rp1.209.000
-➤ 6238 💎  =  Rp1.370.200
-➤ 9288 💎  =  Rp2.015.000
-
-➤ ⭐️ SL/TW FAST = Rp132.990
-➤ ⭐️ SL SLOW = Rp115.000
-➤ ⭐️ SL PLUS = Rp302.250\`\`\`
-━━━━━━━━━━━━━━━━━━
-📝 *FORMAT ORDER*
-Nickname :
-ID :
-Server :
-Order dm :
-Paket : ML A
-Sisa dm :
-━━━━━━━━━━━━━━━━━━
-*MOBILE LEGENDS B* ✅
-⏳ _1-5 MENIT MAX 60 MENIT_
-━━━━━━━━━━━━━━━━━
-\`\`\`➤ 3     💎  =  Rp1.267
-➤ 5     ??  =  Rp1.445
-➤ 14    💎  =  Rp3.602
-➤ 28    💎  =  Rp7.204
-➤ 42    💎  =  Rp10.806
-➤ 56    💎  =  Rp14.408
-➤ 70    💎  =  Rp18.010
-➤ 114   💎  =  Rp28.816
-➤ 140   💎  =  Rp36.020
-➤ 285   💎  =  Rp68.693
-➤ 372   💎  =  Rp89.223
-➤ 457   💎  =  Rp109.752
-➤ 556   💎  =  Rp133.835
-➤ 570   💎  =  Rp137.387
-➤ 720   💎  =  Rp167.790
-➤ 977   💎  =  Rp229.379
-➤ 1163  💎  =  Rp273.990
-➤ 1454  💎  =  Rp339.131
-➤ 2012  💎  =  Rp472.966
-➤ 4394  💎  =  Rp987.028
-➤ 5883  💎  =  Rp1.316.304
-➤ 6589  💎  =  Rp1.480.542
-➤ 7376  💎  =  Rp1.645.580
-➤ 8339  💎  =  Rp1.871.407
-➤ 9302  💎  =  Rp2.097.234
-➤ 10000 💎  =  Rp2.240.943
-➤ 12456 💎  =  Rp2.796.046
-➤ 17290 💎  =  Rp3.865.993
-
-➤ ⭐️ SL+💎/TW FAST = Rp129.500
-➤ ⭐️ SL+??/TW SLOW = Rp115.000
-➤ ⭐️ SL PLUS  = Rp289.500\`\`\`
-━━━━━━━━━━━━━━━━━━
-━━━━━━━━━━━━━━━━━━
-*PECAHAN DIAMOND ML* ✅
-━━━━━━━━━━━━━━━━━━
-⚪️ *MOBILE LEGENDS A*
-\`\`\`➤ 86   💎  =  78 + Bonus 8
-➤ 172  💎  =  156 + Bonus 16
-➤ 257  💎  =  234 + Bonus 23
-➤ 344  💎  =  312 + Bonus 32
-➤ 429  💎  =  390 + Bonus 39
-➤ 514  💎  =  468 + Bonus 46
-➤ 600  💎  =  546 + Bonus 54
-➤ 706  💎  =  625 + Bonus 81
-➤ 792  💎  =  703 + Bonus 89
-➤ 878  💎  =  781 + Bonus 97
-➤ 963  💎  =  859 + Bonus 104
-➤ 1050 💎  =  937 + Bonus 113
-➤ 1412 💎  =  1250 + Bonus 162
-➤ 2195 💎  =  1860 + Bonus 335
-➤ 3688 💎  =  3099 + Bonus 589
-➤ 4032 💎  =  3411 + Bonus 591
-➤ 5532 💎  =  4649 + Bonus 883
-➤ 6238 💎  =  5274 + Bonus 964
-➤ 9288 💎  =  7740 + Bonus 1548\`\`\`
-━━━━━━━━━━━━━━━━━━
-⚪️ *MOBILE LEGENDS B*
-\`\`\`➤ 3     💎  =  3 + Bonus 0
-➤ 5     💎  =  5 + Bonus 0
-➤ 14    💎  =  13 + Bonus 1
-➤ 28    💎  =  26 + Bonus 2
-➤ 42    💎  =  38 + Bonus 4
-➤ 56    💎  =  51 + Bonus 5
-➤ 70    💎  =  64 + Bonus 6
-➤ 114   💎  =  104 + Bonus 10
-➤ 140   💎  =  127 + Bonus 13
-➤ 285   💎  =  260 + Bonus 25
-➤ 372   💎  =  338 + Bonus 34
-➤ 457   💎  =  416 + Bonus 41
-➤ 556   💎  =  506 + Bonus 50
-➤ 570   💎  =  519 + Bonus 51
-➤ 720   💎  =  638 + Bonus 82
-➤ 977   💎  =  872 + Bonus 105
-➤ 1163  💎  =  1041 + Bonus 122
-➤ 1454  💎  =  1288 + Bonus 166
-➤ 2012  💎  =  1796 + Bonus 216
-➤ 5883  💎  =  4959 + Bonus 924
-➤ 7376  💎  =  6198 + Bonus 1178
-➤ 8339  💎  =  7057 + Bonus 1282
-➤ 9302  💎  =  7822 + Bonus 1480
-➤ 10000 💎  =  8448 + Bonus 1552
-➤ 12456 💎  =  10546 + Bonus 1910
-➤ 17290 💎  =  14568 + Bonus 2722\`\`\`
-━━━━━━━━━━━━━━━━━━
-⚪️ *MOBILE LEGENDS C*
-\`\`\`➤ 42    💎  =  38 + Bonus 4
-➤ 70    💎  =  64 + Bonus 6
-➤ 140   💎  =  127 + Bonus 13
-➤ 284   💎  =  254 + Bonus 30
-➤ 355   💎  =  317 + Bonus 38
-➤ 429   💎  =  383 + Bonus 46
-➤ 569   💎  =  510 + Bonus 59
-➤ 716   💎  =  633 + Bonus 83
-➤ 1446  💎  =  1252 + Bonus 194
-➤ 2976  💎  =  2501 + Bonus 475
-➤ 7502  💎  =  6252 + Bonus 1250\`\`\`
-━━━━━━━━━━━━━━━━━━
-📝 *FORMAT ORDER*
-Nickname :
-ID :
-Server :
-Order dm :
-Paket : ML B
-Sisa dm :
-━━━━━━━━━━━━━━━━━━
-📢  *INFO KAMU*  📢
-📍 *Bot Name* : *${global.botname}*
-📍 *Jam* : *${wib}*
-📍 *Tanggal* : *${week}, ${date}*
-📍 *Tanggal Islam* : *${dateIslamic}*
-📍 *Aktif* : *${runtime(process.uptime())}*
-📍 *Prefix* : 「  *MULTI*  」
-📍 *Nama* : *${pushname}*
-📍 *${times}*
-⛔️ *JIKA ADA KESALAHAN ID & SERVER 100% BUKAN TANGGUNG JAWAB ADMIN*
-━━━━━━━━━━━━━━━━━━`
-let btn = [{
-urlButton: {
-displayText: 'O R D E R H E R E',
-url: global.sourceurl
-}
-}, {
-callButton: {
-displayText: 'P E M I L I K',
-phoneNumber: global.phone
-}
-}, {
-quickReplyButton: {
-displayText: '🌹B A C A D U L U D I S I N I🌹',
-id: `${prefix}rulesorder`
-}
-}, {
-quickReplyButton: {
-displayText: '🤖 B A Y A R 🤖',
-id: `${prefix}payment`
-}  
-}, {
-quickReplyButton: {
-displayText: 'K E M B A L I ▶️',
-id: 'menu'
-}
-}]
-client.send5ButImg(m.chat, anu, client.user.name, global.thumb, btn)
-}
-break
-case 'rulesorder' : case 'orderrules': {
-if (jam >= 5 && jam <= 9) {
-ucapan = 'Selamat Pagi!⛅\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 10 && jam <= 14) {
-ucapan = 'Selamat Siang!☀️\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 15 && jam <= 17) {
-ucapan = 'Selamat Sore!🌄\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 18 && jam <= 20) {
-ucapan = 'Selamat Petang!🌕\nTerima Kasih Atas Kunjungan Anda'
-} else if (jam >= 21 && jam <= 23) {
-ucapan = 'Selamat Malam!🌘\nTerima Kasih Atas Kunjungan Anda'
-} else {
-ucapan = 'Sudah larut malam, Jangan lupa istirahat!😴'
-} 
-countDownDate = new Date(`${global.tanggal},00:00:00`).getTime();
-now = new Date().getTime();
-distance = countDownDate - now;
-days = Math.floor(distance / (1000 * 60 * 60 * 24));
-if (distance < 0) {
-times = ("Terlewat");
-} else {
-times = (days + " Hari Lagi Menuju " + global.acara);
-}
-locale = 'id'
-d = new Date(new Date + 3600000)
-week = d.toLocaleDateString(locale, {
-weekday: 'long'
-})
-date = d.toLocaleDateString(locale, {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-})
-dateIslamic = Intl.DateTimeFormat(locale + '-TN-u-ca-islamic', {
-day: 'numeric',
-month: 'long',
-year: 'numeric'
-}).format(d)
-wib = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
-let anu = `🔥R U L E S O R D E R B O T🔥
-
-${ucapan}
-
-📢  *INFO*  📢
-📍 *Bot Name* : *${global.botname}*
-📍 *Jam* : *${wib}*
-📍 *Tanggal* : *${week}, ${date}*
-📍 *Tanggal Islam* : *${dateIslamic}*
-📍 *Aktif* : *${runtime(process.uptime())}*
-📍 *Prefix* : 「  *MULTI*  」
-📍 *Nama* : *${pushname}*
-📍 *${times}*
-
-┏━━━━━━━━━━━━━━⬣
-┃「 ⛔️ *RULES JADISTORESHOP* ⛔️ 」
-⬣ ━━━━━━━━━━━━━━⬣
-┃⚠️ *PENTING!!!*
-┃⚠️ *JANGAN MALAS BACA!!!*
-┏━━━━━━━━━━━━━━⬣
-┃▫️ *_RULES GIFT SKIN_*
-┃
-┃1. Dilarang ganti akun setelah masuk ┃antrian
-┃2. Dilarang ganti nickname setelah ┃masuk antrian
-┃3. Dilarang ganti skin setelah masuk ┃antrian
-┃4. Dilarang unfriend setelah masuk list ┃antrian
-┃5. Tidak bisa refund
-┃
-┃MELANGGAR? AUTO HANGUS ❌
-┃
-┃_Sistem :_
-┃- Kirim format -> Tf lunas -> Add ID ┃yang diberi admin -> Tunggu 7 hari 
-┃- Proses 7 hari + Antrian
-┗━━━━━━━━━━━━━━⬣
-┃▫️ RULES DM SLOW
-┃
-┃1. Dilarang untuk menyebarkan ┃screenshot diamond masuk di ┃Inbox, testi buyer dll, jika ketahuan ┃akan di kick dan di blacklist, serta ┃akan mendapatkan resiko lainnya.
-┃
-┃2. Per akun maximal 2695 DM per ID ┃dalam satu minggu, lebih dari itu ┃masuk antrian minggu depannya lagi.
-┃
-┃3. Dilarang untuk para reseller ┃menyantumkan tanggal kapan turun ┃diamondnya bilang saja estimasi 7-14 ┃hari maximal 21 hari (jika ada kendala/┃trouble)
-┃
-┃4. Jika Diamond belum masuk, ┃konfirmasi komplain hari senin mulai ┃dari jam 18:00 sampai jam 23:59 WIB.
-┃
-┃5. Transaksi via ID Diamonds Legal ┃from Montoon (jangan melanggar ┃rules jika tidak mau beresiko)
-┃
-┃6. Kesalahan ID dan Server ┃ditanggung pembeli
-┃
-┃7. Jika ingin laporan Diamond tidak ┃masuk, berikan bukti video dan foto ┃pada hari yang sama, batas waktu ┃memberikan video dan foto sampai ┃hari selasa, jika dihari lain komplain ┃akan di tolak.
-┃
-┃8. Patuhi rules jika tidak ingin ┃adanya resiko dari kami!
-┃
-┃9. Pesanan yang telah masuk list ┃tidak dapat di Cancel/Refund (kecuali ┃dari pihak kami)
-┃
-┃ Catatan:
-┃- Diamond biasanya di kirim setiap ┃hari senin, jadi kamu bisa cek secara ┃berkala setiap hari senin di waktu ┃7-14 hari dan maximal 21 hari jika ┃ada kendala/trouble dari pusat.
-┃- Yang bilang lama atau lambat tidak ┃usah order! Bagi yang paham saja ┃(Rata-rata di pasaran ML Slow 14-21 ┃Hari! Rate 160 - 170) Cara hitung ┃Rate : Diamond x Rate = Harga (ex : ┃1225dm x 158 = 193.550)
-┗━━━━━━━━━━━━━━⬣
-┏━━⬣「 *🗒NOTE* 」━━━━━━⬣
-┃JIKA ADA KEJADIAN ORDERAN
-┃HANGUS ATAS KESALAHAN
-┃BUYER YANG TIDAK MEMBACA/┃MELANGGAR RULES, MAKA ITU
-┃BUKAN TANGGUNG JAWAB ADMIN
-┗━━━━━━━━━━━━━━━━⬣`
 let btn = [{
 urlButton: {
 displayText: 'S C R I P T',
@@ -6361,7 +5409,6 @@ Maker:
 ➤ ${prefix}quoteit
 
 Anime:
-➤ ${prefix}hentai 
 ➤ ${prefix}lolivideo 
 ➤ ${prefix}waifu 
 ➤ ${prefix}neko 
@@ -6417,18 +5464,22 @@ Owner:
 ➤ ${prefix}ochat
 ➤ ${prefix}react
 
-Thanks to:
+THANKS TO
 • Allah swt
 • Adiwajshing
 • Dika Ardnt
 • Penyedia Layanan API
 • Penyedia Modules
 • Orang-orang yang Berdonasi
+• Ahmad Chen Wang Xuesi
 • Hans
 • Nekell
 • Bremana
 • Irwanx
 • Wifi Tetangga
+      SPECIAL THANKS TO
+• Limoy<3
+• Bunga
 `
 let btn = [{
 urlButton: {
@@ -6521,18 +5572,22 @@ Baca rules bot dahulu sebelum menggunakan fitur-fitur bot agar tidak terbanned d
 Ada keperluan dengan owner bot?
 ketik *${prefix}chatowner* pesan kamu atau ketik *${prefix}owner* untuk mengetahui kontak owner
 
-Thanks to:
+THANKS TO
 • Allah swt
 • Adiwajshing
 • Dika Ardnt
 • Penyedia Layanan API
 • Penyedia Modules
 • Orang-orang yang Berdonasi
+• Ahmad Chen Wang Xuesi
 • Hans
 • Nekell
 • Bremana
 • Irwanx
 • Wifi Tetangga
+      SPECIAL THANKS TO
+• Limoy<3
+• Bunga
 
 *MENU*:
 
@@ -6541,7 +5596,6 @@ Thanks to:
 📍 ${prefix}dare
 📍 ${prefix}tictactoe
 📍 ${prefix}delttt
-📍 ${prefix}family100
 📍 ${prefix}asahotak
 📍 ${prefix}siapaaku
 📍 ${prefix}lagukebangsaan
@@ -6587,36 +5641,12 @@ client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
 }
                                                         break
 default:
-if (buddy.includes(`mualaikum`)) {
-client.sendMessage(m.chat, { audio: global.wala, mimetype: 'audio/mpeg', ptt: true }, { quoted: m })
-}
-
-if (buddy.includes(`mu'alaikum`)) {
-client.sendMessage(m.chat, { audio: global.wala, mimetype: 'audio/mpeg', ptt: true }, { quoted: m })
-}
-
-if (buddy.includes('biasalah')){
-client.sendMessage(m.chat, { audio: global.biasa, mimetype: 'audio/mpeg', ptt: true }, { quoted: m })
-}
-
 if (buddy.includes(`curhat`)) {
-m.reply(`Ada apa sih sayang, sini dong cerita apa masalahnya`)
+m.reply(`Ada apa sih kawan, sini dong cerita apa masalahnya`)
 }
 
 if (buddy.includes(' cok')) {
 m.reply('Tulis Yang Bener Napa Ngegas Muluk Cok...!!');
-}
-
-if (buddy.includes(`makasi`)) {
-client.sendMessage(m.chat, { audio: global.samasama, mimetype: 'audio/mpeg', ptt: true }, { quoted: m })
-}
-
-if (buddy.includes(`mkasi`)) {
-client.sendMessage(m.chat, { audio: global.samasama, mimetype: 'audio/mpeg', ptt: true }, { quoted: m })
-}
-
-if (buddy.includes(`terima kasih`)) {
-client.sendMessage(m.chat, { audio: global.samasama, mimetype: 'audio/mpeg', ptt: true }, { quoted: m })
 }
 
 if (budy.includes('tiktok.com/')) {
