@@ -815,7 +815,7 @@ m.reply('Nggih');
 break
 
 case 'p': {
-if (!m.isGroup) return m.reply(`Hay ${pushname}👋, Selamat datang di Ayaka bot\nKetik *${prefix}menu* untuk melihat semua fitur kami`);
+if (!m.isGroup) return m.reply(`Hay ${pushname}👋, Selamat datang di Ayaka bot\nKetik *${prefix}menu* untuk melihat semua fitur kami\nketik *${prefix}tutobot untuk melihat cara penggunaan bot kami`);
 if (isCreator) return m.reply('Salam yang bener sayang☺️');
 m.reply('Salam sing bener cok!1!1');
 }
