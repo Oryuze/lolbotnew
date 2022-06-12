@@ -145,7 +145,7 @@ async function start() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                        let Ttes = `${num.split("@")[0]} Telah Meninggalkan Grup ${metadata.subject}`
-let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("@")[0]}`
+let Tod = `Selamat Datang DI GRUP *${metadata.subject}*\n\nUsername : ${num.split("@")[0]}\n\nSilahkan Intro-!\nTag admin untuk melihat list intro`
                 if (anu.action == 'add') {
                     let message = await prepareWAMessageMedia({ image: {url: ppuser }}, { upload: client.waUploadToServer })
                 const template = generateWAMessageFromContent(anu.id, proto.Message.fromObject({
@@ -153,9 +153,9 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: Tod,
-                            hydratedFooterText: 'Selamat Datang Di Group Semoga Betah',
+                            hydratedFooterText: 'Jika Admin tidak mewajibkan intro, Skip aja intronya\nSelamat Datang di grup, Semoga Betah',
                             hydratedButtons: [{
-                            	urlButton: {
+                                urlButton: {
                                 displayText: 'O W N E R ',
                                     url: 'https://wa.me/6282296959969'
                                 }
@@ -181,9 +181,9 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: Ttes,
-                            hydratedFooterText: 'Selamat Tinggal Semoga Tenang Di Alam Sana :D',
+                            hydratedFooterText: 'Selamat Tinggal-! Semoga Tenang Di Alam Sana :D',
                             hydratedButtons: [{
-                            	urlButton: {
+                                urlButton: {
                                 displayText: 'O W N E R',
                                     url: 'https://wa.me/6282296959969'
                                 }
@@ -244,14 +244,14 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
     }
     
     client.sendContact = async (jid, kon, quoted = '', opts = {}) => {
-	let list = []
-	for (let i of kon) {
-	    list.push({
-	    	displayName: await client.getName(i + '@s.whatsapp.net'),
-	    	vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await client.getName(i + '@s.whatsapp.net')}\nFN:${await client.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:anonsecteaminc@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://github.com/koleksibot\nitem3.X-ABLabel:GITHUB\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
-	    })
-	}
-	client.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
+    let list = []
+    for (let i of kon) {
+        list.push({
+            displayName: await client.getName(i + '@s.whatsapp.net'),
+            vcard: `BEGIN:VCARD\nVERSION:3.0\nN:${await client.getName(i + '@s.whatsapp.net')}\nFN:${await client.getName(i + '@s.whatsapp.net')}\nitem1.TEL;waid=${i}:${i}\nitem1.X-ABLabel:Ponsel\nitem2.EMAIL;type=INTERNET:anonsecteaminc@gmail.com\nitem2.X-ABLabel:Email\nitem3.URL:https://github.com/koleksibot\nitem3.X-ABLabel:GITHUB\nitem4.ADR:;;Indonesia;;;;\nitem4.X-ABLabel:Region\nEND:VCARD`
+        })
+    }
+    client.sendMessage(jid, { contacts: { displayName: `${list.length} Kontak`, contacts: list }, ...opts }, { quoted })
     }
     
     client.setStatus = (status) => {
@@ -270,13 +270,13 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
         })
         return status
     }
-	
+    
     client.public = true
 
     client.serializeM = (m) => smsg(client, m, store)
 
     client.ev.on('connection.update', async (update) => {
-        const { connection, lastDisconnect } = update	    
+        const { connection, lastDisconnect } = update       
         if (connection === 'close') {
         let reason = new Boom(lastDisconnect?.error)?.output.statusCode
             if (reason === DisconnectReason.badSession) { console.log(`Bad Session File, Please Delete Session and Scan Again`); start(); }
@@ -455,7 +455,7 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
      * @returns 
      */
     client.sendImage = async (jid, path, caption = '', quoted = '', options) => {
-	let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
+    let buffer = Buffer.isBuffer(path) ? path : /^data:.*?\/.*?;base64,/i.test(path) ? Buffer.from(path.split`,`[1], 'base64') : /^https?:\/\//.test(path) ? await (await getBuffer(path)) : fs.existsSync(path) ? fs.readFileSync(path) : Buffer.alloc(0)
         return await client.sendMessage(jid, { image: buffer, caption: caption, ...options }, { quoted })
     }
 
@@ -538,7 +538,7 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
         await client.sendMessage(jid, { sticker: { url: buffer }, ...options }, { quoted })
         return buffer
     }
-	
+    
     /**
      * 
      * @param {*} message 
@@ -555,7 +555,7 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
         for await(const chunk of stream) {
             buffer = Buffer.concat([buffer, chunk])
         }
-	let type = await FileType.fromBuffer(buffer)
+    let type = await FileType.fromBuffer(buffer)
         trueFileName = attachExtension ? (filename + '.' + type.ext) : filename
         // save to file
         await fs.writeFileSync(trueFileName, buffer)
@@ -569,9 +569,9 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
         let buffer = Buffer.from([])
         for await(const chunk of stream) {
             buffer = Buffer.concat([buffer, chunk])
-	}
+    }
         
-	return buffer
+    return buffer
      } 
     
     /**
@@ -619,20 +619,20 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
      */
     client.copyNForward = async (jid, message, forceForward = false, options = {}) => {
         let vtype
-		if (options.readViewOnce) {
-			message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
-			vtype = Object.keys(message.message.viewOnceMessage.message)[0]
-			delete(message.message && message.message.ignore ? message.message.ignore : (message.message || undefined))
-			delete message.message.viewOnceMessage.message[vtype].viewOnce
-			message.message = {
-				...message.message.viewOnceMessage.message
-			}
-		}
+        if (options.readViewOnce) {
+            message.message = message.message && message.message.ephemeralMessage && message.message.ephemeralMessage.message ? message.message.ephemeralMessage.message : (message.message || undefined)
+            vtype = Object.keys(message.message.viewOnceMessage.message)[0]
+            delete(message.message && message.message.ignore ? message.message.ignore : (message.message || undefined))
+            delete message.message.viewOnceMessage.message[vtype].viewOnce
+            message.message = {
+                ...message.message.viewOnceMessage.message
+            }
+        }
 
         let mtype = Object.keys(message.message)[0]
         let content = await generateForwardMessageContent(message, forceForward)
         let ctype = Object.keys(content)[0]
-		let context = {}
+        let context = {}
         if (mtype != "conversation") context = message.message[mtype].contextInfo
         content[ctype].contextInfo = {
             ...context,
@@ -654,26 +654,26 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
 
     client.cMod = (jid, copy, text = '', sender = client.user.id, options = {}) => {
         //let copy = message.toJSON()
-		let mtype = Object.keys(copy.message)[0]
-		let isEphemeral = mtype === 'ephemeralMessage'
+        let mtype = Object.keys(copy.message)[0]
+        let isEphemeral = mtype === 'ephemeralMessage'
         if (isEphemeral) {
             mtype = Object.keys(copy.message.ephemeralMessage.message)[0]
         }
         let msg = isEphemeral ? copy.message.ephemeralMessage.message : copy.message
-		let content = msg[mtype]
+        let content = msg[mtype]
         if (typeof content === 'string') msg[mtype] = text || content
-		else if (content.caption) content.caption = text || content.caption
-		else if (content.text) content.text = text || content.text
-		if (typeof content !== 'string') msg[mtype] = {
-			...content,
-			...options
+        else if (content.caption) content.caption = text || content.caption
+        else if (content.text) content.text = text || content.text
+        if (typeof content !== 'string') msg[mtype] = {
+            ...content,
+            ...options
         }
         if (copy.key.participant) sender = copy.key.participant = sender || copy.key.participant
-		else if (copy.key.participant) sender = copy.key.participant = sender || copy.key.participant
-		if (copy.key.remoteJid.includes('@s.whatsapp.net')) sender = sender || copy.key.remoteJid
-		else if (copy.key.remoteJid.includes('@broadcast')) sender = sender || copy.key.remoteJid
-		copy.key.remoteJid = jid
-		copy.key.fromMe = sender === client.user.id
+        else if (copy.key.participant) sender = copy.key.participant = sender || copy.key.participant
+        if (copy.key.remoteJid.includes('@s.whatsapp.net')) sender = sender || copy.key.remoteJid
+        else if (copy.key.remoteJid.includes('@broadcast')) sender = sender || copy.key.remoteJid
+        copy.key.remoteJid = jid
+        copy.key.fromMe = sender === client.user.id
 
         return proto.WebMessageInfo.fromObject(copy)
     }
@@ -697,7 +697,7 @@ let Tod = `Selamat Datang DI GRUP ${metadata.subject}\n\nUsername :${num.split("
         return {
             res,
             filename,
-	    size: await getSizeMedia(data),
+        size: await getSizeMedia(data),
             ...type,
             data
         }
@@ -712,8 +712,8 @@ start()
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
-	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update ${__filename}`))
-	delete require.cache[file]
-	require(file)
+    fs.unwatchFile(file)
+    console.log(chalk.redBright(`Update ${__filename}`))
+    delete require.cache[file]
+    require(file)
 })
