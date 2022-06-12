@@ -56,7 +56,7 @@ global.limitawal = {
 }
 
 //load file
-global.thumb = fs.readFileSync('./lib/octave.png')
+global.thumb = fs.readFileSync('./lib/ayaka.png')
 global.wala = fs.readFileSync('aud/wala.m4a')
 global.biasa = fs.readFileSync('aud/biasalah.m4a')
 global.samasama = fs.readFileSync('aud/sama.m4a')
