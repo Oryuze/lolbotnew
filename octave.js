@@ -5297,6 +5297,19 @@ Search:
 ➤ ${prefix}covid [query]
 ➤ ${prefix}cogan
 ➤ ${prefix}cecan
+
+Voice Changer:
+➤ ${prefix}bass
+➤ ${prefix}blown
+➤ ${prefix}deep
+➤ ${prefix}earrape
+➤ ${prefix}fast
+➤ ${prefix}fat
+➤ ${prefix}nightcore
+➤ ${prefix}reverse
+➤ ${prefix}robot
+➤ ${prefix}slow
+➤ ${prefix}tupai
  
 Convert:
 ➤ ${prefix}toimage
