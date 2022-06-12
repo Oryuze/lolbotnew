@@ -4208,7 +4208,7 @@ break
  
 CARA PENGGUNAAN BOT\n\nUntuk menggunakan bot ketik perintah yang sesuai dengan menu (kalau mau liat menu silahkan ketik "allmenu") Saat menggunakan bot, mohon tidak melakukan spam, menghindari bot slow respon dan error, Jika bot tidak merespon command anda, mohon ulangi perintah anda, pastikan tidak typo atau salah ketik *JIKA BOT TIDAK MERESPON SAMA SEKALI MOHON SEGERA HUBUNGI OWNER*\n\nCONTACT OWNER\nhttps://wa.me/6282296959969.`,
                                                                 buttonText: "PERTANYAAN",
-                                                                footerText: `Isa Dan Alquran`,
+                                                                footerText: `Cara Penggunaan`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Pertanyaan pertanyaan Umum",
@@ -4243,11 +4243,11 @@ CARA PENGGUNAAN BOT\n\nUntuk menggunakan bot ketik perintah yang sesuai dengan m
                                                         }
 break
     case 'jelaskan1': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/066a38926aaff19445723.jpg' }, caption: `*Hi, ${m.pushName}*\n Yang di maksud query adalah tujuan dari pencarian kita, Contohnya Jika kamu ingin mencari foto pinterest, Yang kamu ketik di kolom pencarian, itulah yg dimaksud query` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1e16b57c84760195165a5.jpg' }, caption: `*Hi, ${m.pushName}*\n Yang di maksud query adalah tujuan dari pencarian kita, Contohnya Jika kamu ingin mencari foto pinterest, Yang kamu ketik di kolom pencarian, itulah yg dimaksud query` }, { quoted: m })
             }
 break
     case 'jelaskan2': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/066a38926aaff19445723.jpg' }, caption: `*Hi, ${m.pushName}*\n Yang Di Maksud Usage ada cara penggunaan, Sebagai contohnya Kamu mengetik tiktoknowm tanpa link tiktok otomatis bot akan mengirim hal yang di butuhkan\n` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1e16b57c84760195165a5.jpg' }, caption: `*Hi, ${m.pushName}*\n Yang Di Maksud Usage ada cara penggunaan, Sebagai contohnya Kamu mengetik tiktoknowm tanpa link tiktok otomatis bot akan mengirim hal yang di butuhkan\n` }, { quoted: m })
             }
 break
 
