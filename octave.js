@@ -3875,7 +3875,7 @@ break
  
 Silakan Pilih Menu Di Bawah Ini Untuk Berdonasi Di Bot Ini
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Terima Kasih Sudah Berdonasi`,
                                                                 listType: "SINGLE_SELECT",
@@ -3912,15 +3912,15 @@ Silakan Pilih Menu Di Bawah Ini Untuk Berdonasi Di Bot Ini
                                                         }
 break
     case 'viagopay': case 'gopay': case 'gopaydonasi': case 'donategopay': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/01efc88558af5b019f162.jpg' }, caption: `*Hi, ${m.pushName}*\n Terima Kasih Sudah Donasi Via Gopay\n\nMaaf Gopay Tidak Ada\nSilakan Scan Gambar Di Atas Ini Untuk Berdonasi\n` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/589e5a62986556de0de87.jpg' }, caption: `*Hi, ${m.pushName}*\n Terima Kasih Sudah Donasi Via Gopay\n\nMaaf Gopay Tidak Ada\nSilakan Scan Gambar Di Atas Ini Untuk Berdonasi\n` }, { quoted: m })
             }
 break
     case 'viadana': case 'dana': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/01efc88558af5b019f162.jpg' }, caption: `*Hi, ${m.pushName}*\n Terima Kasih Sudah Donasi Via Dana\n\nSilakan Scan Gambar Di Atas Ini Untuk Berdonasi\n` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/589e5a62986556de0de87.jpg' }, caption: `*Hi, ${m.pushName}*\n Terima Kasih Sudah Donasi Via Dana\n\nSilakan Scan Gambar Di Atas Ini Untuk Pembayaraan\n` }, { quoted: m })
             }
 break
     case 'viapulsa': case 'pulsa': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e37f5918d494f02ada57d.jpg' }, caption: `*Hi, ${m.pushName}*\n Terima Kasih Sudah Donasi Via Pulsa\n\nSilakan Tulis Nomor Di Gambar Di Atas Ya\n` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/357dcfed1fbf7a4cea8cf.jpg' }, caption: `*Hi, ${m.pushName}*\n Terima Kasih Sudah Donasi Via Pulsa\n\nSilakan Tulis Nomor Di Gambar Di Atas Ya\n` }, { quoted: m })
             }
 break
                                           case 'sewabot':{
@@ -3929,7 +3929,7 @@ break
                                                                 title: `Hi ${pushname}`,
                                                                 description: `Mau Sewa Bot Ya? Silakan Pilih Harga Di Bawah Ini..!!`,
                                                                 buttonText: "SEWA",
-                                                                footerText: `Untuk Pembayaraan Tulis Perintah *Donasi*`,
+                                                                footerText: `Untuk Pembayaraan Tulis Perintah *Payment* atau *donasi*`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
                                                                             "title": "Harga Sewabot 🔥",
@@ -3951,6 +3951,13 @@ break
                                                                                     
                                                                                     "title": "😻 15RIBU 😻",
                                                                                     "description": "Sewabot Dengan Harga 15K Selama 30Hari/1Bulan ",
+                                                                                    "rowId": `${prefix}chatowner`
+                                                                                },
+                                                                                
+                                                                                {
+                                                                                    
+                                                                                    "title": "😻 20RIBU 😻",
+                                                                                    "description": "Sewabot Dengan Harga 20K Permanen ",
                                                                                     "rowId": `${prefix}chatowner`
                                                                                 }
                                                                             ]
@@ -3980,7 +3987,7 @@ Selamat datang Ayaka Multi Device. di menu ini kalian bisa mendapatkan panduan s
                                                                 footerText: `Hallo Kak Saya Adalah Ayakabot Multi Device`,
                                                                 listType: "SINGLE_SELECT",
                                                                 sections: [{
-                                                                            "title": "Jangan Spam Entar Di Kick Nangis",
+                                                                            "title": "Jangan Spam Entar Di block Nangis",
                                                                             "rows": [
                                                                                 {
                                                                                     "title": "🖥ALL MENU BOT🖥",
@@ -4042,7 +4049,8 @@ RUNTIME BOT
 
 Kalau Mau Add Bot Silakan Chat Owner Ku Dulu Kak 😗
 
-Trial 2hari Setelah Itu Bayar 5k Dapat Jatah Bot Selama 1 Minggu 😇
+*Promo*
+Free Add bot(1 Bulan) Masa Berlaku 12 Juni - 25 Juni
 
 _Free Gunakan Bot Di Mode Chat Pribadi Nb : Jangan Spam 😡_
 
@@ -4063,7 +4071,6 @@ Day •> ${jangwak}
 • Meme
 • Wphd
 • Payment
-• Formedit
 • Animemenu
 • Shopee
 • Gameshopee
@@ -4216,7 +4223,7 @@ break
 ➤ ${prefix}rules
 ➤ ${prefix}speedtest
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka BOT Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4273,7 +4280,7 @@ break
 ➤ ${prefix}cogan
 ➤ ${prefix}cecan
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka BOT Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4323,7 +4330,7 @@ break
 ➤ ${prefix}dbinary
 ➤ ${prefix}styletext
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `AyakaBOT Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4382,7 +4389,7 @@ break
 ➤ ${prefix}cekvote
 ➤ ${prefix}hapusvote
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4427,7 +4434,7 @@ break
 ➤ ${prefix}quoteskehidupan
 ➤ ${prefix}renungan
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4474,7 +4481,7 @@ break
 ➤ ${prefix}kisahnabi
 ➤ ${prefix}jadwalsholat
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4525,7 +4532,7 @@ break
 ➤ ${prefix}qrencode
 ➤ ${prefix}qrdecode
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4572,7 +4579,7 @@ break
 ➤ ${prefix}getmsg
 ➤ ${prefix}delmsg
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "CLICK HERE",
                                                                 footerText: `Ayaka Multi Device 🤖 Version : 2.0.1`,
                                                                 listType: "SINGLE_SELECT",
@@ -4750,7 +4757,7 @@ break
  ➥ ${prefix}start
  ➥ ${prefix}anonymous
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "Anonymous Chat",
                                                                 footerText: `Mulai Bermain Anonymous Chat`,
                                                                 listType: "SINGLE_SELECT",
@@ -4829,7 +4836,7 @@ break
 ➤ ${prefix}cringe
 ➤ ${prefix}storyanime
  
- ╰───[ K O L E K S I - B O T   ]───`,
+ ╰───[ A Y A K A - B O T   ]───`,
                                                                 buttonText: "OTHER",
                                                                 footerText: `Menu Lain Di Bot Ini`,
                                                                 listType: "SINGLE_SELECT",
