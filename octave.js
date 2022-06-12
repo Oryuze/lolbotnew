@@ -815,7 +815,7 @@ m.reply('Nggih');
 break
 
 case 'p': {
-if (!m.isGroup) return m.reply(`Hay ${pushname}👋, Selamat datang di blue hat bot\nKetik *${prefix}menu* untuk melihat semua fitur kami`);
+if (!m.isGroup) return m.reply(`Hay ${pushname}👋, Selamat datang di Ayaka bot\nKetik *${prefix}menu* untuk melihat semua fitur kami`);
 if (isCreator) return m.reply('Salam yang bener sayang☺️');
 m.reply('Salam sing bener cok!1!1');
 }
@@ -4200,6 +4200,57 @@ break
                 client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/e37f5918d494f02ada57d.jpg' }, caption: `*Hi, ${m.pushName}*\n (Kami Staff IDI berterimahkasih kepada seorang Muslimah NU, Aisha Nurramdhani, yang sudah berusaha untuk meningkatkan pengertian kaum seagamanya agar kita dapat saling mengerti. Khususnya tentang pengertian Isa Al-Masih bagi para Mukmin) Ada banyak wanita Muslim Menerima Isa Al-Masih karena mengenalnya dengan benar. Seperti Muslimah NU ini memiliki pemahaman yang dalam soal Isa Al-Masih bagi para Mukmin. Menurutnya, apakah Isa Al-Masih adalah Tuhan? Paparannya itu bermanfaat bagi iman kita. Muslimah NU ini memiliki pemahaman soal Isa Al-Masih bagi para Mukmin yang dalam. Menurutnya, apakah Isa Al-Masih adalah Tuhan? Paparannya itu bermanfaat bagi iman kita.Muslimah NU Prihatin akan Salah Paham Soal Isa Al-Masih Muslimah NU Aisha Nurramdhani melihat banyak kaum Muslim yang masih salah pengertian tentang Isa Al-Masih menurut Kristen. Bahkan tokoh sebesar Habib Rizieq masih salah paham soal Isa Al-Masih.Karena itulah ia memberikan cara jitu bagi kaum Muslim agar mengenal Isa dengan benar. Ia juga memaparkan pemahamannya soal Isa Al-Masih.Nasihat Bijak Muslimah NU “Pengertian Isa Al-Masih yang Benar” Kepada kaum Muslim, Muslimah NU ini memberikan saran bijaksana agar para Muslim menerima Isa Al-Masih. “Pertama–tama kita harus mengerti terlebih dahulu posisi Yesus [Isa Al-Masih] di mata Kristiani. Ya, lepas dahulu kaca mata Islam kita yang penuh dengan doktrin dan ayat-ayat Quran tentang nabi Isa, agar dapat melihat dengan jelas perspektif  Kristiani terhadap Yesus [Isa Al-Masih].  (Lepasin perspektif Islamnya, bukan lepasin agama Islamnya yach!)” Penjelasan Muslimah NU: Soal Pengertian Hakekat Isa Al-Masih“Bagi umat Kristen, Yesus [Isa Al-Masih] adalah Tuhan yang berinkarnasi (= menjelma) menjadi manusia. Bukan manusia yang diangkat menjadi Tuhan seperti yang selama ini disalah pahami umat Muslim.” Terang Aisha Nurramdhani.“Hal ini bukan tanpa dasar. Mereka melihat banyaknya nubuatan mengenai kedatangan Mesias, Sang Pembebas, Tuhan yang mengambil rupa manusia ini dari kitab Taurat (juga Zabur dan Kitab Para Nabi) . . .” tegasnya.\n` }, { quoted: m })
             }
             break
+                                          case 'tutobot':{
+                                            let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+                                                            listMessage :{
+                                                                title: `Hi  ${pushname}`,
+                                                                description: `Tata cara penggunaan bot
+ 
+CARA PENGGUNAAN BOT\n\nUntuk menggunakan bot ketik perintah yang sesuai dengan menu (kalau mau liat menu silahkan ketik "allmenu") Saat menggunakan bot, mohon tidak melakukan spam, menghindari bot slow respon dan error, Jika bot tidak merespon command anda, mohon ulangi perintah anda, pastikan tidak typo atau salah ketik *JIKA BOT TIDAK MERESPON SAMA SEKALI MOHON SEGERA HUBUNGI OWNER*\n\nCONTACT OWNER\nhttps://wa.me/6282296959969.`,
+                                                                buttonText: "PERTANYAAN",
+                                                                footerText: `Isa Dan Alquran`,
+                                                                listType: "SINGLE_SELECT",
+                                                                sections: [{
+                                                                            "title": "Pertanyaan pertanyaan Umum",
+                                                                            "rows": [
+                                                                                {
+                                                                                    "title": "Apa itu query?",
+                                                                                    "description": "Penjelasan tentang query",
+                                                                                    "rowId": `${prefix}jelaskan1`
+                                                                                },
+                                                                                
+                                                                                {
+                                                                                    
+                                                                                    "title": "Apa itu Usage?",
+                                                                                    "description": "Penjelasan tentang usage",
+                                                                                    "rowId": `${prefix}jelaskan2`
+                                                                                },
+                                                                                
+                                                                                {
+                                                                                    
+                                                                                    "title": "TANYA LANGSUNG SAMA OWNER",
+                                                                                    "description": "Hubungi owner",
+                                                                                    "rowId": `${prefix}owner`
+                                                                                }
+                                                                            ]
+                                                                       
+                                                                        }
+                                                                    ],
+                                                      listType: 1
+                                                            }
+                                                        }), {})
+                                                        client.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                                                        }
+break
+    case 'jelaskan1': {
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/066a38926aaff19445723.jpg' }, caption: `*Hi, ${m.pushName}*\n Yang di maksud query adalah tujuan dari pencarian kita, Contohnya Jika kamu ingin mencari foto pinterest, Yang kamu ketik di kolom pencarian, itulah yg dimaksud query` }, { quoted: m })
+            }
+break
+    case 'jelaskan2': {
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/066a38926aaff19445723.jpg' }, caption: `*Hi, ${m.pushName}*\n Yang Di Maksud Usage ada cara penggunaan, Sebagai contohnya Kamu mengetik tiktoknowm tanpa link tiktok otomatis bot akan mengirim hal yang di butuhkan\n` }, { quoted: m })
+            }
+break
+
                                           case 'mainmenu':{
                                             let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                             listMessage :{
@@ -4622,14 +4673,14 @@ break
                                                                                 {
                                                                                     "title": "Bermain Shopee",
                                                                                     "description": "Mana Hp Idaman Kalian",
-                                                                                    "rowId": `${prefix}3`
+                                                                                    "rowId": `${prefix}shopee3`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "Tebak²an Shopee",
                                                                                     "description": "Ayo Main",
-                                                                                    "rowId": `${prefix}4`
+                                                                                    "rowId": `${prefix}shopee4`
                                                                                 }
                                                                             ]
                                                                        
@@ -4688,11 +4739,11 @@ break
                                                         client.relayMessage(m.chat, template.message, { messageId: template.key.id })
                                                         }
 break
-    case '3':{
+    case 'shopee3':{
                 client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/ca192302dfc8c5544e250.jpg' }, caption: `*Hi, ${m.pushName}*\nPilih Salah 1 Hp Idaman Owner Ku Yang Benar Nanti Dapat Jatah Tium 2x Hehehe\n` }, { quoted: m })
             }
 break
-    case '4':{
+    case 'shopee4':{
                 client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/6ee905af7b05fb906a32e.jpg' }, caption: `*Hi, ${m.pushName}*\n Pilihlah Benda Yang Tepat Untuk Benda Di Pake Oleh Choki\n` }, { quoted: m })
             }
             break
@@ -4700,7 +4751,7 @@ break
                                             let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                             listMessage :{
                                                                 title: `Hi Saya Shopee Bot`,
-                                                                description: `Ketik "1" atau "2" untuk informasi selengkapnya:`,
+                                                                description: `Ketik "shopee1" atau "shopee2" untuk informasi selengkapnya:`,
                                                                 buttonText: "DISINI",
                                                                 footerText: `SHOPEE BOT`,
                                                                 listType: "SINGLE_SELECT",
@@ -4710,14 +4761,14 @@ break
                                                                                 {
                                                                                     "title": "1. Belanja promo menarik ⚡",
                                                                                     "description": "Belanja promo menarik Di Shopee",
-                                                                                    "rowId": `${prefix}1`
+                                                                                    "rowId": `${prefix}shopee1`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "2. Saya ingin bertanya 💬",
                                                                                     "description": "Bertanya Dengan Shopee",
-                                                                                    "rowId": `${prefix}2`
+                                                                                    "rowId": `${prefix}shopee2`
                                                                                 },
                                                                                 
                                                                                 {
@@ -4736,12 +4787,12 @@ break
                                                         client.relayMessage(m.chat, template.message, { messageId: template.key.id })
                                                         }
 break
-    case '1':{
+    case 'shopee1':{
                 client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/d62602cb7c5e5880bf66f.jpg' }, caption: `*Hi, ${m.pushName}*\n 1 (satu) Voucher Gratis Ongkir berlaku untuk maks. 5 (lima) pesanan berbeda dalam 1 (satu) kali checkout. Voucher berlaku untuk pemesanan dari toko yang sama maupun berbeda.Kamu dapat melihat beberapa ketentuan terkait promo gratis ongkir yang dapat kamu nikmati di halaman ini! 👉
 https://shopee.co.id/article-2c\n` }, { quoted: m })
             }
 break
-    case '2':{
+    case 'shopee2':{
                 client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/5fac1f5de75c44f7cb35a.jpg' }, caption: `*Hi, ${m.pushName}*\n Untuk checkout di Shopee, kamu bisa cari produk di kolom pencarian > masukan dulu produknya ke keranjang, nanti dikeranjang silakan pilih produk yang ingin dicheckout ya, voucher yang ingin digunakan (jika ada), kemudian klik checkout.Di halaman checkout kamu bisa lengkapi pilihan jasa kirim dan metode bayar.Lengkapnya ada di link ini ya 👉 https://shopee.co.id/article-1c\n` }, { quoted: m })
             }
             break
@@ -5584,7 +5635,7 @@ m.reply(`Ada apa sih kawan, sini dong cerita apa masalahnya`)
 }
 
 if (buddy.includes(' cok')) {
-m.reply('Tulis Yang Bener Napa Ngegas Muluk Cok...!!');
+m.reply('Piye cok');
 }
 
 if (budy.includes('tiktok.com/')) {
