@@ -1814,7 +1814,7 @@ if (isBan) return m.reply(mess.ban)
 if (!args.join(" ")) return m.reply("Masukan Textnya!")
 if (/image/.test(mime)) {
 var media = await client.downloadAndSaveMediaMessage(quoted)
-imgbb('67bb63bdcb5c234b7aba60c618a2b903', media)
+imgbb('01f871ad56b2137b3affb38dfd46ae31', media)
 .then(async (data) => {
 atast = args.join(" ").split('|')[0] ? args.join(" ").split('|')[0] : '-'
 bawaht = args.join(" ").split('|')[1] ? args.join(" ").split('|')[1] : '-'
