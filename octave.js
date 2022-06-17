@@ -1794,7 +1794,7 @@ const pcknm = swn.split("|")[0];
 const atnm = swn.split("|")[1];
 if (m.quoted.isAnimated === true) {
 client.downloadAndSaveMediaMessage(quoted, "gifee")
-client.sendMessage(from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
+client.sendMessage(m.from, {sticker:fs.readFileSync("gifee.webp")},{quoted:m})
 } else if (/image/.test(mime)) {
 let media = await quoted.download()
 let encmedia = await client.sendImageAsSticker(m.chat, media, m, { packname: pcknm, author: atnm })
@@ -4098,6 +4098,11 @@ Day •> ${jangwak}
                                                                                     "title": "⚡KESELURUHAN MENU",
                                                                                     "description": "Tampilkan Semua Menu",
                                                                                     "rowId": `${prefix}allmenu`
+                                                                                },
+                                                                                {
+                                                                                    "title": "🎯BERMAIN GAME🎯",
+                                                                                    "description": "Tampilkan Semua Menu Game",
+                                                                                    "rowId": `${prefix}gamemenu`
                                                                                 },
                                                                                 {
                                                                                 
