@@ -110,12 +110,12 @@ sourceUrl: rurl
 //quoted
 // VIDEO
 const fvid = {
-	 key: { 
+     key: { 
           fromMe: false,
-	      participant: "0@s.whatsapp.net", 
-	     remoteJid: "120363040549014341@g.us" 
+          participant: "0@s.whatsapp.net", 
+         remoteJid: "120363040549014341@g.us" 
                 },
-	 message: { 
+     message: { 
                  "videoMessage": { 
                  "title": `AyakaBoT`,
                  "h": `AyakaBoT`,
@@ -124,12 +124,12 @@ const fvid = {
                  'jpegThumbnail': global.thumb
                         }
                        }
-	                  }
-	                  
+                      }
+                      
 
 //ftick
 const dev = {
-	key : {
+    key : {
                           participant : "0@s.whatsapp.net",
                           remoteJid: "status@broadcast"
                         },
@@ -246,12 +246,12 @@ banUser = await client.fetchBlocklist()
 const isBan = banUser ? banUser.includes(m.sender) : false
 const jam = moment.tz('Asia/Jakarta').format('HH');
 const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6282296959969-1604595598@g.us"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: global.thumb, surface: 200, message: `©AyakaBoT`, orderTitle: 'AyakaBoT', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-		const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `©AyakaBoT`,jpegThumbnail: global.thumb}}}
-		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "6282296959969-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
-		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":`© ${global.owner}`, "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': `©AyakaBoT`, 'jpegThumbnail': global.thumb}}}
-		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6282296959969-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `©AyakaBoT`, 'jpegThumbnail': global.thumb}}}
-		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "6282296959969-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`P`, "h": `Hmm`,'seconds': '359996400', 'caption': `AyakaBoT`, 'jpegThumbnail': global.thumb}}}
-		const floc = {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `P`,jpegThumbnail: global.thumb}}}
+        const fdoc = {key : {participant : '0@s.whatsapp.net'},message: {documentMessage: {title: `©AyakaBoT`,jpegThumbnail: global.thumb}}}
+        const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "6282296959969-1613049930@g.us" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
+        const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":`© ${global.owner}`, "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': `©AyakaBoT`, 'jpegThumbnail': global.thumb}}}
+        const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6282296959969-1616169743@g.us","inviteCode": "m","groupName": "P", "caption": `©AyakaBoT`, 'jpegThumbnail': global.thumb}}}
+        const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.from ? { remoteJid: "6282296959969-1613049930@g.us" } : {}) },message: { "videoMessage": { "title":`P`, "h": `Hmm`,'seconds': '359996400', 'caption': `AyakaBoT`, 'jpegThumbnail': global.thumb}}}
+        const floc = {key : {participant : '0@s.whatsapp.net'},message: {locationMessage: {name: `P`,jpegThumbnail: global.thumb}}}
 // Group
 const groupMetadata = m.isGroup ? await client.groupMetadata(m.chat).catch(e => {}) : ''
 const groupName = m.isGroup ? groupMetadata.subject : ''
@@ -269,8 +269,8 @@ const reactionMessage = {
                 }
           //reply
  
-	const reply = (teks) => {
-	let thumb = global.thumb
+    const reply = (teks) => {
+    let thumb = global.thumb
             client.sendMessage(m.chat, { text: teks, contextInfo: { mentionedJid: [m.sender],
     externalAdReply :{
     mediaUrl: tod,
@@ -886,7 +886,7 @@ user.afkTime = + new Date
 user.afkReason = text
 m.reply(`${m.pushName} Telah Afk${text ? ': ' + text : ''}`)
 }
-break	
+break   
 case 'ttc': case 'ttt': case 'tictactoe': {
 let TicTacToe = require("./lib/tictactoe")
 this.game = this.game ? this.game : {}
@@ -2147,7 +2147,7 @@ case 'chord': {
   m.reply(anu.result.chord)
 }
         break
-	    case 'play': case 'ytplay': {
+        case 'play': case 'ytplay': {
                 if (!text) throw `Example : ${prefix + command} rootsec`
                 let yts = require("yt-search")
                 let search = await yts(text)
@@ -2544,7 +2544,7 @@ break
                 if (!text) throw `Example : ${prefix + command} http://www.mediafire.com/file/naqy6ofoqkb6poi/Anime_MUGEN_300_Characters_by_Makoto_Itou_%2526_Kizuma_Gaming.apk/file`
                 let anu = await mediafireDownloader(isUrl(text)[0])
                 if (Number(anu.filesize.split("MB")[0]) >= 100.00) return m.reply('File Melebihi Batas '+util.format(m.result))
-		client.sendText(m.chat, util.format(anu), m)
+        client.sendText(m.chat, util.format(anu), m)
                 client.sendMedia(m.chat, anu.link, '', m)
             }
             break
@@ -3937,28 +3937,28 @@ break
                                                                                 {
                                                                                     "title": "Free",
                                                                                     "description": "Add bot gratis (Syarat & ketentuan berlaku)",
-                                                                                    "rowId": `${prefix}chatowner`
+                                                                                    "rowId": `${prefix}owner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "😻 5RIBU 😻",
                                                                                     "description": "Sewabot Dengan Harga 5K Selama 7Hari/1Minggu ",
-                                                                                    "rowId": `${prefix}chatowner`
+                                                                                    "rowId": `${prefix}owner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "😻 15RIBU 😻",
                                                                                     "description": "Sewabot Dengan Harga 15K Selama 30Hari/1Bulan ",
-                                                                                    "rowId": `${prefix}chatowner`
+                                                                                    "rowId": `${prefix}owner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "😻 20RIBU 😻",
                                                                                     "description": "Sewabot Dengan Harga 20K Permanen ",
-                                                                                    "rowId": `${prefix}chatowner`
+                                                                                    "rowId": `${prefix}owner`
                                                                                 }
                                                                             ]
                                                                        
@@ -4927,7 +4927,7 @@ break
                                                         client.relayMessage(m.chat, template.message, { messageId: template.key.id })
                                                         }
                                                         break
-case 'simple' : case 'simplemenu': case 'menusimple': case 'sm': {
+case 'simple' : case 'simplemenu': case 'menusimple':  {
 if (jam >= 5 && jam <= 9) {
 ucapan = 'Selamat Pagi!⛅\nTerima Kasih Atas Kunjungan Anda'
 } else if (jam >= 10 && jam <= 14) {
