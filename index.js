@@ -82,7 +82,7 @@ async function start() {
     const callerId = json.content[0].attrs['call-creator']
     if (json.content[0].tag == 'offer') {
     let pa7rick = await client.sendContact(callerId, global.owner)
-    client.sendMessage(callerId, { text: `Sistem otomatis block!\nJangan menelpon bot!\nSilahkan Hubungi Owner Untuk Dibuka !`}, { quoted : pa7rick })
+    client.sendMessage(callerId, { text: `Telpon terdeteksi!!\nSistem otomatis block!\nJangan menelpon bot!\nSilahkan Hubungi Owner Untuk Dibuka !`}, { quoted : pa7rick })
     await sleep(8000)
     await client.updateBlockStatus(callerId, "block")
     }
@@ -145,7 +145,7 @@ async function start() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                        let Ttes = `@${num.split("@")[0]} Telah Meninggalkan Grup ${metadata.subject}`
-let Tod = `Selamat Datang DI GRUP *${metadata.subject}*\n\nUsername : @${num.split("@")[0]}\n\nSilahkan Intro-!\nTag admin untuk melihat list intro`
+let Tod = `Selamat Datang DI GRUP *${metadata.subject}*\n\nUsername : @${num.split("@")[0]} \n\nSilahkan Intro-!\nTag admin untuk melihat list intro`
                 if (anu.action == 'add') {
                     let message = await prepareWAMessageMedia({ image: {url: ppuser }}, { upload: client.waUploadToServer })
                 const template = generateWAMessageFromContent(anu.id, proto.Message.fromObject({
