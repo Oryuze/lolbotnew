@@ -803,14 +803,19 @@ case 'bot': {
 m.reply(`Iya bos silahkan ketik ${prefix}menu`);
 }
 break
-
-case 'cok': {
-m.reply('Piye cok?');
+    
+case '@ahmd.syihab21_': {
+m.reply('Ini tuh ig ownerku, Jangan lupa di follow ya gais:3');
 }
 break
 
-case 'insecure' case 'insekyur': {
-m.reply('Hey Kamu-!!\nyang lagi insecure, Gausah insecure dong, coba liat diri kamu sendiri!, sangat indah kan?? Nah makanya jangan insecure, kamu itu sempurna kok dimata tuhan<3');    
+case 'insecure': {
+m.reply('Hey Kamu-!!yang lagi insecure, Gausah insecure dong, coba liat diri kamu sendiri!, sangat indah kan?? Nah makanya jangan insecure, kamu itu sempurna kok dimata tuhan<3');  
+}
+break    
+
+case 'cok': {
+m.reply('Piye cok?');
 }
 break
 
