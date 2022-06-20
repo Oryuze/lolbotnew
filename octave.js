@@ -809,6 +809,16 @@ m.reply('Piye cok?');
 }
 break
 
+case 'insecure' case 'insekyur' {
+m.reply('Hey Kamu-!!\nyang lagi insecure, Gausah insecure dong, coba liat diri kamu sendiri!, sangat indah kan?? Nah makanya jangan insecure, kamu itu sempurna kok dimata tuhan<3');    
+}
+break
+
+case '@ahmd.syihab21_'{
+m.reply('Ini tuh ig ownerku, Jangan lupa di follow ya gais:3');
+}
+break
+
 case 'suwun': case 'suwon': {
 m.reply('Nggih');
 }
