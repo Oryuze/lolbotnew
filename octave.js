@@ -4249,7 +4249,7 @@ break
             }
 break
     case 'introgc': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0b69e8b4ca042f815d364.jpg' }, caption: `Haii Member baru-!!!\n*Silahkan Intro terlebih dahulu*\nUsername ${pushname}\nSlahkan isi list dibawah ini\nNama    :\nUmur     :\nAskot    :\nGender   :\nHobi     \n\nSelamat datang di grup\n silahkan tag admin setelah mengisi list intro` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0b69e8b4ca042f815d364.jpg' }, caption: `*HAII MEMBER BARU-!!*\nSelamat bergabung bersama kami di grup ${Metadata.subject}\n\nUsername : *${pushname}*\n\nSilahkan Isi list intro di bawah\n\nNAMA		:(nama lengkap kamu)\nPANGGILAN	:(nama panggialan kamu)\nULTAH		:(Ultah Kamu)\nUMUR		:(Umur kamu)\nASKOT		:(Provinsi/kota kamu)\nGENDER		:(laki laki/perempuan)\n\n\nSilahkan Tag admin setelah mengisi form intro dan selamat bergabung bersama kami` }, { quoted: m })
             }
 break
     case 'jelaskansewa': {
