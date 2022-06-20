@@ -3387,7 +3387,7 @@ if (!text) throw `Usage: *${prefix + command} instagram url*`
 if (/(?:\/p\/|\/reel\/)([^\s&]+)/.test(isUrl(text)[0])) {
 let delrep = await m.reply(mess.wait)
 let igeh = new instaDownloader()
-let anu = await igeh.download(text)
+let anu = await igeh.instaDownloader(text)
 if (anu.status == false) throw 'Invalid link or private post'
 if (anu.media_count == 1) {
   if (anu.type == 'image') {
@@ -3410,20 +3410,6 @@ await sleep(2000)
 client.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: delrep.key.id, participant: delrep.key.remoteJid } })
 } else {
   m.reply('Only support IG Posts and Reels')
-}
-}
-break
-case 'igtv': {
-if (!text) throw `Usage: *${prefix + command} instagram url*`
-if (/(?:\/tv\/)([^\s&]+)/.test(isUrl(text)[0])) {
-let delrep = await m.reply(mess.wait)
-let igeh = new instaDownloader()
-let anu = await igeh.tv(text)
-client.sendMessage(m.chat, {video: {url: anu.url}, caption: `*Result*:\n\n⭔ *Username*: ${anu.username}\n⭔ *Full Name*: ${anu.full_name}\n⭔ *Like Count*: ${anu.likes}\n⭔ *Comment Count*: ${anu.comments}\n⭔ *Verified*: ${anu.verified}\n⭔ *View*: ${anu.viewers}\n⭔ *Caption*: ${anu.caption}`}, {quoted: m})
-await sleep(2000)
-client.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: delrep.key.id, participant: delrep.key.remoteJid } })
-} else {
-  m.reply('Only supports IGTV')
 }
 }
 break
