@@ -4256,7 +4256,7 @@ break
             }
 break
     case 'introgc': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0b69e8b4ca042f815d364.jpg' }, caption: `Haii Member baru-!!!\n*Silahkan Intro terlebih dahulu*\nUsername ${pushname}\nSlahkan isi list dibawah ini\nNama :\nUmur :\nAskot :\nGender :\nHobi\n\nSelamat datang di grup ${metadata.subject}\n silahkan tag admin setelah mengisi list intro` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0b69e8b4ca042f815d364.jpg' }, caption: `Haii Member baru-!!!\n*Silahkan Intro terlebih dahulu*\nUsername ${pushname}\nSlahkan isi list dibawah ini\nNama :\nUmur :\nAskot :\nGender :\nHobi\n\nSelamat datang di grup\n silahkan tag admin setelah mengisi list intro` }, { quoted: m })
             }
 break
 
