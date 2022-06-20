@@ -27,8 +27,7 @@ const { linkwa } = require("./lib/linkwa");
 const { Gempa, Cuaca } = require("./lib/bmkg");
 const { textpro, textpro2, ephoto } = require("./lib/textpro");
 const { tiktok } = require("./lib/tiktok");
-const { Instagram } = require('./lib/instagram')
-const { zippyDownloader, mediafireDownloader } = require('./lib/downloader')
+const { zippyDownloader, mediafireDownloader, instaDownloader } = require('./lib/downloader')
 const { mediafireDl } = require ('./lib/mediafire');
 const { terjemah } = require ('./lib/translate');
 const { download } = require ('./lib/twitter')
@@ -3387,7 +3386,7 @@ case 'ig': case 'instagram': {
 if (!text) throw `Usage: *${prefix + command} instagram url*`
 if (/(?:\/p\/|\/reel\/)([^\s&]+)/.test(isUrl(text)[0])) {
 let delrep = await m.reply(mess.wait)
-let igeh = new Instagram()
+let igeh = new instaDownloader()
 let anu = await igeh.download(text)
 if (anu.status == false) throw 'Invalid link or private post'
 if (anu.media_count == 1) {
@@ -3418,7 +3417,7 @@ case 'igtv': {
 if (!text) throw `Usage: *${prefix + command} instagram url*`
 if (/(?:\/tv\/)([^\s&]+)/.test(isUrl(text)[0])) {
 let delrep = await m.reply(mess.wait)
-let igeh = new Instagram()
+let igeh = new instaDownloader()
 let anu = await igeh.tv(text)
 client.sendMessage(m.chat, {video: {url: anu.url}, caption: `*Result*:\n\n⭔ *Username*: ${anu.username}\n⭔ *Full Name*: ${anu.full_name}\n⭔ *Like Count*: ${anu.likes}\n⭔ *Comment Count*: ${anu.comments}\n⭔ *Verified*: ${anu.verified}\n⭔ *View*: ${anu.viewers}\n⭔ *Caption*: ${anu.caption}`}, {quoted: m})
 await sleep(2000)
