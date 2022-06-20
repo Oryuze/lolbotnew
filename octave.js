@@ -3942,23 +3942,16 @@ break
                                                                                 
                                                                                 {
                                                                                     
-                                                                                    "title": "😻 5RIBU 😻",
-                                                                                    "description": "Sewabot Dengan Harga 5K Selama 7Hari/1Minggu ",
+                                                                                    "title": "20RIBU",
+                                                                                    "description": "Add bot ke grup + akun premium + unlimited group ",
                                                                                     "rowId": `${prefix}owner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
-                                                                                    "title": "😻 15RIBU 😻",
-                                                                                    "description": "Sewabot Dengan Harga 15K Selama 30Hari/1Bulan ",
-                                                                                    "rowId": `${prefix}owner`
-                                                                                },
-                                                                                
-                                                                                {
-                                                                                    
-                                                                                    "title": "😻 20RIBU 😻",
-                                                                                    "description": "Sewabot Dengan Harga 20K Permanen ",
-                                                                                    "rowId": `${prefix}owner`
+                                                                                    "title": "Perbedaan",
+                                                                                    "description": "Perbedaan Paket Free dan Berbayar ",
+                                                                                    "rowId": `${prefix}jelaskansewa`
                                                                                 }
                                                                             ]
                                                                        
@@ -4256,7 +4249,11 @@ break
             }
 break
     case 'introgc': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0b69e8b4ca042f815d364.jpg' }, caption: `Haii Member baru-!!!\n*Silahkan Intro terlebih dahulu*\nUsername ${pushname}\nSlahkan isi list dibawah ini\nNama :\nUmur :\nAskot :\nGender :\nHobi\n\nSelamat datang di grup\n silahkan tag admin setelah mengisi list intro` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/0b69e8b4ca042f815d364.jpg' }, caption: `Haii Member baru-!!!\n*Silahkan Intro terlebih dahulu*\nUsername ${pushname}\nSlahkan isi list dibawah ini\nNama    :\nUmur     :\nAskot    :\nGender   :\nHobi     \n\nSelamat datang di grup\n silahkan tag admin setelah mengisi list intro` }, { quoted: m })
+            }
+break
+    case 'jelaskansewa': {
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1e16b57c84760195165a5.jpg' }, caption: `Apa sih Perbedaan gratis dengan berbayar??\n\nDapat kita lihat pada menu, Jika berbayar kita diberikan akun premium secara gratis, dan bisa add bot kemana saja tanpa persetujuan owner, sedangkan yang free, kamu tidak bisa add bot sesuka hati, butuh persetujuan owner agar bisa di add ke grup` }, { quoted: m })
             }
 break
 
