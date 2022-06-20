@@ -145,7 +145,7 @@ async function start() {
                     ppgroup = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
                 }
                        let Ttes = `@${num.split("@")[0]} Telah Meninggalkan Grup ${metadata.subject}`
-let Tod = `Selamat Datang DI GRUP *${metadata.subject}*\n\nUsername : @${num.split("@")[0]} \n\nSilahkan Intro-!\nTag admin untuk melihat list intro`
+let Tod = `Selamat Datang DI GRUP *${metadata.subject}*\n\nUsername : @${num.split("@")[0]} \n\nSilahkan Intro-!\nTag admin untuk melihat list intro atau ketuk button intro dibawah`
                 if (anu.action == 'add') {
                     let message = await prepareWAMessageMedia({ image: {url: ppuser }}, { upload: client.waUploadToServer })
                 const template = generateWAMessageFromContent(anu.id, proto.Message.fromObject({
@@ -161,8 +161,8 @@ let Tod = `Selamat Datang DI GRUP *${metadata.subject}*\n\nUsername : @${num.spl
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'R U L E S',
-                                    id: `rulesbot`
+                                    displayText: 'I N T R O',
+                                    id: `introgc`
                                 }
                             }, {
                                 quickReplyButton: {
