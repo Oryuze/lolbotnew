@@ -3936,20 +3936,42 @@ break
                                                                             "rows": [
                                                                                 {
                                                                                     "title": "Free",
-                                                                                    "description": "Add bot gratis (Syarat & ketentuan berlaku)",
+                                                                                    "description": "Add bot gratis (trial 2 hari)",
                                                                                     "rowId": `${prefix}owner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
+                                                                                    "title": "10RIBU",
+                                                                                    "description": "Add bot ke grup, Durasi 1 bulan ",
+                                                                                    "rowId": `${prefix}owner`
+                                                                                },
+
+                                                                                {
+ 
                                                                                     "title": "20RIBU",
-                                                                                    "description": "Add bot ke grup + akun premium + unlimited group ",
+                                                                                    "description": "Add bot ke grup, Durasi 3 bulan ",
+                                                                                    "rowId": `${prefix}owner`
+                                                                                },
+
+                                                                                {
+ 
+                                                                                    "title": "50K",
+                                                                                    "description": "Add bot ke grup, Durasi PERMANEN ",
+                                                                                    "rowId": `${prefix}owner`
+                                                                                },
+                                                                                
+                                                                                
+                                                                                {
+ 
+                                                                                    "title": "70RIBU",
+                                                                                    "description": "BOT PRIBADI + Jadi owner +  UNLIMITED GROUP",
                                                                                     "rowId": `${prefix}owner`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
-                                                                                    "title": "Perbedaan",
+                                                                                    "title": "Cara Penyewaan bot",
                                                                                     "description": "Perbedaan Paket Free dan Berbayar ",
                                                                                     "rowId": `${prefix}jelaskansewa`
                                                                                 }
@@ -3964,8 +3986,9 @@ break
                                                         }
 break
 break
-case 'owner': case 'creator': {
+case 'owner': case 'creatorbot': {
 client.sendContact(m.chat, global.owner, m)
+client.sendMessage(m.chat, { text : `Silahkan Hubungi Owner untuk melakukan TRANSAKSI atau Chat Owner Untuk mendapatkan info seputar bot, *OWNER BUKAN BOT!!!*`})  
 }
 break
                                           case 'nextmenu' :{
@@ -4047,7 +4070,7 @@ Free Add bot(1 Bulan) Masa Berlaku 12 Juni - 25 Juni
 
 _Free Gunakan Bot Di Mode Chat Pribadi Nb : Jangan Spam 😡_
 
-*List New Vitur 🔥*
+*List New Fitur 🔥*
 
 Hi Kak ${ucapanWaktu}
 Day •> ${jangwak}
@@ -4253,7 +4276,7 @@ break
             }
 break
     case 'jelaskansewa': {
-                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1e16b57c84760195165a5.jpg' }, caption: `Apa sih Perbedaan gratis dengan berbayar??\n\nDapat kita lihat pada menu, Jika berbayar kita diberikan akun premium secara gratis, dan bisa add bot kemana saja tanpa persetujuan owner, sedangkan yang free, kamu tidak bisa add bot sesuka hati, butuh persetujuan owner agar bisa di add ke grup` }, { quoted: m })
+                client.sendMessage(m.chat, { image: { url: 'https://telegra.ph/file/1e16b57c84760195165a5.jpg' }, caption: `CARA SEWA BOT\n\nPilih Harga terlebih dahulu, Untuk melihat list harga, Silahkan ketik sewabot, Setelah menetukan harga, otomatis bot akan mengirimkan kontak owner, Silahkan hubungi owner untuk melakukan transaksi, Jika pembayaran telah masuk, otomatis bot akan di masukkan ke grup` }, { quoted: m })
             }
 break
 
