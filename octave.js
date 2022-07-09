@@ -2359,7 +2359,7 @@ client.sendMessage(m.chat, buttonMessage, { quoted: m })
 break
             case 'cecan': {
             let buttons = [
-                    {buttonId: `cecan`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `cecan`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.zacros.my.id/asupan/cecan' },
@@ -2373,7 +2373,7 @@ break
 break
             case 'wallnime': {
             let buttons = [
-                    {buttonId: `wallnime`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `wallnime`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/wallnime?apikey=ThadzBotZ' },
@@ -2387,7 +2387,7 @@ break
 break
             case 'wallpaper2': case 'wphd': {
             let buttons = [
-                    {buttonId: `wallpaper2`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `wallpaper2`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random2/wallpaper?apikey=ThadzBotZ' },
@@ -2401,7 +2401,7 @@ break
     break
             case 'cogan': {
             let buttons = [
-                    {buttonId: `cogan`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `cogan`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/cogan?apikey=ThadzBotZ' },
@@ -2415,11 +2415,11 @@ break
     break
             case 'blackpink': case 'pinkblack': {
             let buttons = [
-                    {buttonId: `blackpink`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `blackpink`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/blackpink?apikey=ThadzBotZ' },
-                    caption: `Ini Kak Fans Mu Jangan Sang3 Ya 😅`,
+                    caption: `Ini Kak`,
                     footer: client.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2429,7 +2429,7 @@ break
     break
             case 'bts': {
             let buttons = [
-                    {buttonId: `bts`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `bts`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/bts?apikey=ThadzBotZ' },
@@ -2443,7 +2443,7 @@ break
         break
             case 'waifu2': case 'husbu2': case 'neko2': {
             let buttons = [
-                    {buttonId: `waifu`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `waifu`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.zacros.my.id/randomimg/waifu' },
@@ -2457,7 +2457,7 @@ break
         break
             case 'waifu2': case 'husbu2': case 'neko2': {
             let buttons = [
-                    {buttonId: `waifu`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `waifu`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.zacros.my.id/randomimg/waifu' },
@@ -2471,7 +2471,7 @@ break
         break
             case 'elina': case 'elaina': {
             let buttons = [
-                    {buttonId: `elina`, buttonText: {displayText: 'Lagi Bot 😏'}, type: 1}
+                    {buttonId: `elina`, buttonText: {displayText: 'NEXT PICTURE'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/elaina?apikey=ThadzBotZ' },
@@ -2497,9 +2497,9 @@ break
                 client.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
     break
-            case 'meme': {
+            case 'memeing': {
             let buttons = [
-                    {buttonId: `meme`, buttonText: {displayText: 'Next The Fun😂'}, type: 1}
+                    {buttonId: `memeing`, buttonText: {displayText: 'Next'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: 'https://api.lolhuman.xyz/api/random/meme?apikey=ThadzBotZ' },
@@ -3937,28 +3937,28 @@ break
                                                                                 {
                                                                                     "title": "Free",
                                                                                     "description": "Add bot gratis (trial 2 hari)",
-                                                                                    "rowId": `${prefix}owner`
+                                                                                    "rowId": `${prefix}freesewa`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "10RIBU",
                                                                                     "description": "Add bot ke grup, Durasi 1 bulan ",
-                                                                                    "rowId": `${prefix}owner`
+                                                                                    "rowId": `${prefix}sewasatu`
                                                                                 },
 
                                                                                 {
  
                                                                                     "title": "20RIBU",
                                                                                     "description": "Add bot ke grup, Durasi 3 bulan ",
-                                                                                    "rowId": `${prefix}owner`
+                                                                                    "rowId": `${prefix}sewadua`
                                                                                 },
 
                                                                                 {
  
                                                                                     "title": "50K",
                                                                                     "description": "Add bot ke grup, Durasi PERMANEN ",
-                                                                                    "rowId": `${prefix}owner`
+                                                                                    "rowId": `${prefix}sewalima`
                                                                                 },
                                                                                 
                                                                                 
@@ -3966,13 +3966,13 @@ break
  
                                                                                     "title": "70RIBU",
                                                                                     "description": "BOT PRIBADI + Jadi owner +  UNLIMITED GROUP",
-                                                                                    "rowId": `${prefix}owner`
+                                                                                    "rowId": `${prefix}sewatujuh`
                                                                                 },
                                                                                 
                                                                                 {
                                                                                     
                                                                                     "title": "Cara Penyewaan bot",
-                                                                                    "description": "Perbedaan Paket Free dan Berbayar ",
+                                                                                    "description": "panduan sewa bot ",
                                                                                     "rowId": `${prefix}jelaskansewa`
                                                                                 }
                                                                             ]
@@ -4084,7 +4084,7 @@ Day •> ${jangwak}
 • Wallpaper
 • Elina
 • Memeindo
-• Meme
+• Memeing
 • Wphd
 • Payment
 • Animemenu
@@ -5666,6 +5666,111 @@ id: `${prefix}rules`
 quickReplyButton: {
 displayText: '💸 S E W A B O T 💸',
 id: 'sewabot'
+}
+}]
+client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
+}
+                                                        break
+case 'freesewa': {
+let anu = `S E W A - B O T
+
+Haii ${pushname} Mau Sewabot yaa??
+
+Silahkan Tekan Tombol *TRANSAKSI* Di Bawah
+`
+let btn = [{
+urlButton: {
+displayText: 'T R A N S A K S I',
+url: global.free
+}
+}, {
+callButton: {
+displayText: 'O W N E R',
+phoneNumber: global.phone
+}
+}]
+client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
+}
+                                                        break
+case 'sewasatu': {
+let anu = `S E W A - B O T
+
+Haii ${pushname} Mau Sewabot yaa??
+
+Silahkan Tekan Tombol *TRANSAKSI* Di Bawah
+`
+let btn = [{
+urlButton: {
+displayText: 'T R A N S A K S I',
+url: global.aa
+}
+}, {
+callButton: {
+displayText: 'O W N E R',
+phoneNumber: global.phone
+}
+}]
+client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
+}
+                                                        break                                                                                                               
+case 'sewadua': {
+let anu = `S E W A - B O T
+
+Haii ${pushname} Mau Sewabot yaa??
+
+Silahkan Tekan Tombol *TRANSAKSI* Di Bawah
+`
+let btn = [{
+urlButton: {
+displayText: 'T R A N S A K S I',
+url: global.ab
+}
+}, {
+callButton: {
+displayText: 'O W N E R',
+phoneNumber: global.phone
+}
+}]
+client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
+}
+                                                        break
+case 'sewalima': {
+let anu = `S E W A - B O T
+
+Haii ${pushname} Mau Sewabot yaa??
+
+Silahkan Tekan Tombol *TRANSAKSI* Di Bawah
+`
+let btn = [{
+urlButton: {
+displayText: 'T R A N S A K S I',
+url: global.ac
+}
+}, {
+callButton: {
+displayText: 'O W N E R',
+phoneNumber: global.phone
+}
+}]
+client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
+}
+                                                        break
+case 'sewatujuh': {
+let anu = `S E W A - B O T
+
+Haii ${pushname} Mau Sewabot yaa??
+
+Silahkan Tekan Tombol *TRANSAKSI* Di Bawah
+`
+let btn = [{
+urlButton: {
+displayText: 'T R A N S A K S I',
+url: global.ad
+}
+}, {
+callButton: {
+displayText: 'O W N E R',
+phoneNumber: global.phone
 }
 }]
 client.sendButImg(m.chat, anu, client.user.name, global.thumb, btn)
