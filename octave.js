@@ -4055,55 +4055,23 @@ break
                                             let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                                             listMessage :{
                                                                 title: `Hi ${pushname}`,
-                                                                description: `🤖 Ayaka BOT 🤖
+                                                                description: `Hii  *${pushname}*
 
-Semua Ada Disini 🙈
+A Y A K A - B O T
 
-RUNTIME BOT
+Runtime Bot!!
+-> *${runtime (process.uptime())}*
 
- •> Runtime : ${runtime(process.uptime())}
+*Sekedar Info*
+Saat Ini Bot hanya dapat di gunakan di chat pribadi, Bot sudah tidak bisa di add ke grup!!
+*Owner nya lagi ke pesantren*
 
-Kalau Mau Add Bot Silakan Chat Owner Ku Dulu Kak 😗
+BOT Ini Free Di Gunakan Di Chat Pribadi Tanpa dipungut Biaya
 
-*Promo*
-Free Add bot(1 Bulan) Masa Berlaku 12 Juni - 25 Juni
+NB: Jangan Spam!!
 
-_Free Gunakan Bot Di Mode Chat Pribadi Nb : Jangan Spam 😡_
-
-*List New Fitur 🔥*
-
-Hi Kak ${ucapanWaktu}
-Day •> ${jangwak}
-
-• Lolivideo
-• Cecan
-• Cogan
-• Bts
-• Blackpink
-• Waifu
-• Wallpaper
-• Elina
-• Memeindo
-• Memeing
-• Wphd
-• Payment
-• Animemenu
-• Shopee
-• Gameshopee
-• Rate
-• Wallnime
-• Play new vitur
-• Animeart
-• Estetic
-• Smeme
-• Databasemenu
-• Toolsmenu
-• Islamimenu
-• Quotesmenu
-• Groupmenu
-• Convertmenu
-• Searchmenu
-• Isadanalquran`,
+Bot Tidak Menerima Telepon/Video Call
+Jika Anda Nekat Melakukan Telp/Video Call, Sistem Akan otomatis memblokir nomor anda`,
                                                                 buttonText: "CLICK DISINI",
                                                                 footerText: `Click Di Bawah Untuk Melanjutkan Ke Menu`,
                                                                 listType: "SINGLE_SELECT",
